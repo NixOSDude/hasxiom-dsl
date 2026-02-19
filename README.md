@@ -8,7 +8,7 @@ The project currently automates the ingestion, enrichment, and tree-analysis of 
 ## Core Inspirations & Intent
 Hasxiom is a rigorous exercise in functional mastery, synthesized from three primary drivers:
 * **Architectural Philosophy:** Heavily inspired by the work of **Alex Vieth**, specifically the application of axiomatic DSLs and high-assurance functional patterns. We aim for "Correctness by Construction."
-* **The 13k Node Challenge:** Inspired by **Malte's** technical breakdown of the Nix package graph. This project specifically addresses the scaling issues Malte identified, using pure recursion to navigate the 13,000+ package web without stack overflows or memory leaks.
+* **The 13k Node Challenge:** Inspired by **Malte's** technical breakdown of the Nix package graph. Malte identifies that while there are roughly 17,000 packages on Hackage, only about 7,000 typically build in the main Nix packages set. This project addresses the scaling and dependency issues inherent in managing 13,000+ nodes using pure recursion to navigate the web without the memory leaks or stack overflows often associated with global coherency challenges.
 * **Professional Milestone:** This codebase serves as the primary technical portfolio for application to **Mercury Financial**. It demonstrates the ability to manage complex distributed systems and large-scale data sets using the most stringent FP constraints.
 
 ## Distributed Infrastructure (The NixOS Grid)
@@ -38,6 +38,6 @@ As a pure functional project, Hasxiom adheres to these non-negotiable standards:
 * **Complexity Goal:** $O(n)$ for ingestion and $O(\log n)$ for tree traversal.
 
 ## Current Progress: The Malte Milestone
-The system has successfully ingested the Nix dependency graph into a relational lakehouse, solving the scale issues inherent in 13,000+ node traversals.
+The system has successfully ingested the Nix dependency graph into a relational lakehouse, solving the scale issues inherent in 13,000+ node traversals identified in Malte's research.
 * **Enrichment:** Automated metadata tagging for all nodes.
 * **Impact Analysis:** Determining the "blast radius" of package updates within the graph using tail-recursive exploration.
