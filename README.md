@@ -6,7 +6,7 @@
 The project currently automates the ingestion, enrichment, and tree-analysis of over 13,000+ nodes within the Nix ecosystem, mapping the complex dependencies of the world's most sophisticated package manager.
 
 ## The Mission: Solving the 13k Node Challenge
-The primary purpose of Hasxiom is to bridge the "Coherency Gap" in the Haskell-Nix ecosystem, a challenge famously detailed in **Malte’s** technical breakdown of Nixpkgs. I was inspired to create/develop Hasxiom DSL to relieve this pain point.
+The primary purpose of Hasxiom is to bridge the "Coherency Gap" in the Haskell-Nix ecosystem, a challenge famously detailed in **Malte Ott’s** technical breakdown of Nixpkgs. I was inspired to create/develop Hasxiom DSL to relieve this pain point.
 
 While Hackage contains ~17,000 packages, the global coherency constraints of Nixpkgs often limit the buildable set to ~7,000. Hasxiom addresses the scaling and dependency issues inherent in managing these 13,000+ nodes by synthesizing three core pillars:
 
