@@ -27,6 +27,7 @@ Our engineering environment consists of two physical NixOS nodes linked via a de
     * **RAM:** 64GB DDR5
     * **GPU:** NVIDIA RTX 3060 (12GB VRAM) - Active/Registered in NixOS
     * **Storage:** 1TB 5th Gen PCIe NVMe SSD
+    * **OS:** NixOS
 
 ### Node B: The Data Engine (nixlakehouse)
 * **Role:** PostgreSQL Ingestion, Massive Node Processing, Persistent Storage.
@@ -36,6 +37,7 @@ Our engineering environment consists of two physical NixOS nodes linked via a de
     * **CPU:** Intel Core i7
     * **RAM:** 24GB DDR4
     * **Storage:** 1TB SATA SSD
+    * **OS:** NixOS
 
 ## The Four Tenets of Hasxiom
 1. **Total Functions Only:** No `null` values; every input has a defined, returned output.
