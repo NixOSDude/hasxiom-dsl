@@ -1,0 +1,16 @@
+digraph G {
+  rankdir=LR;
+  node [shape=box, style=filled, color=lightblue, fontname="Courier"];
+  // Root: /nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/l622p70vy8k5sh7y5wizi5f2mic6ynpg-source-stdenv.sh";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/shkw4qm9qcw5sc5n1k5jznc83ny02r39-default-builder.sh";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/gcm3x4yxwc0wzcgvhb6msyqnbd6afh2w-stdenv-linux.drv";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/hxrxlk9mavifyxb3bwk8sl5lwss0r8cp-bash-5.3p3.drv";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/3dvl3dk4v2gvsb34vkkjc8nqygzx682p-ghc-9.10.3.drv";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/08i4419qr06fflq7qp20rxnrhw2c06vq-get-env.sh";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/09x6f9227v00ybrbmbz3bdk0p72mxydj-nixd-2.7.0.drv";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/141b0xrvnd466g1y4mvlpbq0fb1i7mz1-ghcid-0.8.9.drv";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/2nmmyjfffxs027my79q90mjw33wmbkhs-cabal-install-3.16.0.0.drv";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/m2n2p51ah7cx2sf6xnb9i40kdf840kmk-direnv-2.37.1.drv";
+  "/nix/store/6yi0y2q6mihizy97mbkkk5j9grsjxvxh-haskell-binary-engineering-shell-env.drv" -> "/nix/store/iwrbwj7cbq8dm8g9vb00blpflmjg3q34-haskell-language-server-2.12.0.0.drv";
+}
