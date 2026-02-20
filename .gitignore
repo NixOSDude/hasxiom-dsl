@@ -1,12 +1,8 @@
+dist-newstyle/
 *.o
 *.hi
-*.txt
-*.json
-*.json.old
-enrich
-ingest
-hasxiom
-hasxiom-linker
-nix-tree
+*.dot
 result
-.direnv/
+identify-pillars
+hasxiom-sentry
+generate-pin
