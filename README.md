@@ -6,7 +6,7 @@
 The project has successfully automated the ingestion of over **17,000+ nodes**, mapping the 119-layer deep dependency tree of the Nix ecosystem into a persistent SQL Lakehouse.
 
 ## The Mission: Solving the 13k Node Challenge
-Inspired by **Malte Ott’s** technical breakdown of Nixpkgs and the axiomatic patterns of **Alex Vieth**, Hasxiom bridges the "Coherency Gap." We have pivoted our architecture to handle the massive computational load of graph traversal by offloading relational logic to a dedicated Lakehouse and GPU-accelerated analysis to the Ultra 7.
+Inspired by **Malte Ott’s** technical breakdown of Nixpkgs and the axiomatic patterns of **Alex Vieth**, Hasxiom bridges the "Coherency Gap." We have pivoted our architecture to handle the massive computational load of graph traversal by offloading relational logic to a dedicated Lakehouse and GPU-accelerated analysis to the Ultra 7. I was inspired to create Hasxiom DSl to relieve these pain points.
 
 ### Core Strategic Pillars:
 1. **Hasxiom DSL:** A custom language utilizing recursive combinators to define high-assurance logic for dependency resolution.
