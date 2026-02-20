@@ -6,3 +6,8 @@ result
 identify-pillars
 hasxiom-sentry
 generate-pin
+*.json
+*.txt
+*.dot
+[Hasxiom]
+hasxiom
