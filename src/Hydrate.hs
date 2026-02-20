@@ -2,7 +2,9 @@
 module Main where
 
 import Database.PostgreSQL.Simple
+import Data.String (fromString)
 import qualified Data.Text as T
+import qualified Data.Text.IO as TIO
 import Hasxiom.Core
 import Hasxiom.Database.Postgres
 
@@ -13,14 +15,17 @@ main = do
     putStrLn ">> [Hasxiom] Connected to Lakehouse at 192.168.68.56"
 
     let queryExpr = FilterByDepth 117 (DependsOn "aeson" Identity)
-    let sql = compileQuery queryExpr
+    let sqlText = compileQuery queryExpr
 
-    putStrLn $ ">> [Hasxiom] Executing DSL: " ++ T.unpack sql
+    putStrLn $ ">> [Hasxiom] Executing DSL: " ++ T.unpack sqlText
     
-    -- Hydrate real records from the Postgres Lakehouse
-    results <- query_ conn (Query sql) :: IO [Package]
+    -- fromString is polymorphic; because query_ expects a Query, 
+    -- it will convert the String (from Text) into a Query type automatically.
+    let sqlQuery = fromString (T.unpack sqlText)
+
+    results <- query_ conn sqlQuery :: IO [Package]
 
     putStrLn $ ">> [Hasxiom] Hydration Complete. Found " ++ show (length results) ++ " packages."
-    mapM_ (print . attrName) results
+    mapM_ (TIO.putStrLn . attrName) results
 
     close conn

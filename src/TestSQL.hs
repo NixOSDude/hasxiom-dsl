@@ -7,13 +7,12 @@ import qualified Data.Text.IO as TIO
 
 main :: IO ()
 main = do
-    putStrLn ">> [Hasxiom] Compiling DSL to SQL..."
+    putStrLn ">> [Hasxiom] Verifying Final Foundation..."
     
-    -- Our complex relationship query
-    -- FilterByDepth 117 (DependsOn "aeson" Identity)
-    let query = FilterByDepth 117 (DependsOn "aeson" Identity)
+    -- (Depth > 100 AND DependsOn aeson) AND (NOT DependsOn lens)
+    let query = And 
+                  (And (FilterByDepth 100 Identity) (DependsOn "aeson" Identity))
+                  (Not (DependsOn "lens" Identity))
     
     let sql = compileQuery query
-    
-    putStrLn "Generated SQL for nixlakehouse:"
-    TIO.putStrLn sql
+    TIO.putStrLn $ "Generated SQL: " <> sql

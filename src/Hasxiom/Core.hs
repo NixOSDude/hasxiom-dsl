@@ -3,32 +3,36 @@ module Hasxiom.Core where
 
 import qualified Data.Text as T
 import Database.PostgreSQL.Simple.FromRow (FromRow(..), field)
+import Database.PostgreSQL.Simple.Types (PGArray(..))
+import Data.List (intersect, union)
 
--- | Tenet 1: Total Data Records.
 data Package = Package 
     { attrName     :: T.Text
     , depth        :: Int
     , dependencies :: [T.Text] 
     } deriving (Show, Eq)
 
--- | Bridge to the Lakehouse: Defining the instance where the type lives.
 instance FromRow Package where
-    fromRow = Package <$> field <*> field <*> (field >>= return . parseDeps)
-      where
-        parseDeps :: Maybe [T.Text] -> [T.Text]
-        parseDeps (Just xs) = xs
-        parseDeps Nothing   = []
+    fromRow = Package <$> field <*> field <*> ((\(PGArray xs) -> xs) <$> field)
 
--- | The Hasxiom DSL Vocabulary
+-- | THE COMPLETE HASXIOM AST
 data HasxiomExpr
-    = FilterByDepth Int HasxiomExpr
+    = Identity
+    | FilterByDepth Int HasxiomExpr
     | DependsOn T.Text HasxiomExpr
-    | Identity
+    | And HasxiomExpr HasxiomExpr
+    | Or HasxiomExpr HasxiomExpr
+    | Not HasxiomExpr              -- Added for completeness
     deriving (Show, Eq)
 
--- | The Engine: Pure Recursive Evaluation
+-- | Semantics: How our language "thinks"
 evaluate :: HasxiomExpr -> [Package] -> [Package]
 evaluate expr pkgs = case expr of
-    Identity -> pkgs
-    FilterByDepth d sub -> filter (\p -> depth p > d) (evaluate sub pkgs)
+    Identity             -> pkgs
+    FilterByDepth d sub  -> filter (\p -> depth p > d) (evaluate sub pkgs)
     DependsOn target sub -> filter (\p -> target `elem` dependencies p) (evaluate sub pkgs)
+    And e1 e2            -> (evaluate e1 pkgs) `intersect` (evaluate e2 pkgs)
+    Or e1 e2             -> (evaluate e1 pkgs) `union` (evaluate e2 pkgs)
+    Not e1               -> pkgs `filterOut` (evaluate e1 pkgs)
+      where
+        filterOut all out = filter (\p -> p `notElem` out) all
