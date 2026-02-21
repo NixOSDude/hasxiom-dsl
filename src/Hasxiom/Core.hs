@@ -2,37 +2,45 @@
 module Hasxiom.Core where
 
 import qualified Data.Text as T
-import Database.PostgreSQL.Simple.FromRow (FromRow(..), field)
+import Data.List (nub)
+import Database.PostgreSQL.Simple.FromRow
+import Database.PostgreSQL.Simple.FromField
 import Database.PostgreSQL.Simple.Types (PGArray(..))
-import Data.List (intersect, union)
 
-data Package = Package 
-    { attrName     :: T.Text
-    , depth        :: Int
-    , dependencies :: [T.Text] 
+data Package = Package
+    { attribute_name :: T.Text
+    , depth          :: Int
+    , dependencies   :: [T.Text]
     } deriving (Show, Eq)
 
 instance FromRow Package where
-    fromRow = Package <$> field <*> field <*> ((\(PGArray xs) -> xs) <$> field)
+    fromRow = do
+        attr <- field
+        d    <- field
+        (PGArray deps) <- field 
+        return $ Package attr d deps
 
--- | THE COMPLETE HASXIOM AST
+-- | THE DSL
 data HasxiomExpr
-    = Identity
-    | FilterByDepth Int HasxiomExpr
+    = AllPackages
     | DependsOn T.Text HasxiomExpr
     | And HasxiomExpr HasxiomExpr
-    | Or HasxiomExpr HasxiomExpr
-    | Not HasxiomExpr              -- Added for completeness
     deriving (Show, Eq)
 
--- | Semantics: How our language "thinks"
-evaluate :: HasxiomExpr -> [Package] -> [Package]
-evaluate expr pkgs = case expr of
-    Identity             -> pkgs
-    FilterByDepth d sub  -> filter (\p -> depth p > d) (evaluate sub pkgs)
-    DependsOn target sub -> filter (\p -> target `elem` dependencies p) (evaluate sub pkgs)
-    And e1 e2            -> (evaluate e1 pkgs) `intersect` (evaluate e2 pkgs)
-    Or e1 e2             -> (evaluate e1 pkgs) `union` (evaluate e2 pkgs)
-    Not e1               -> pkgs `filterOut` (evaluate e1 pkgs)
-      where
-        filterOut all out = filter (\p -> p `notElem` out) all
+-- | FUZZY TAIL RECURSIVE TRANSITIVE CLOSURE
+-- Now uses T.isInfixOf to find targets inside full Nix store paths.
+getTransitiveDeps :: T.Text -> [Package] -> [T.Text] -> [T.Text]
+getTransitiveDeps target allPkgs acc =
+    let direct = [ attribute_name p | p <- allPkgs, any (target `T.isInfixOf`) (dependencies p) ]
+        newDeps = [ d | d <- direct, d `notElem` acc ]
+    in if null newDeps
+       then acc
+       else foldr (\d currentAcc -> getTransitiveDeps d allPkgs currentAcc) (acc ++ newDeps) newDeps
+
+eval :: HasxiomExpr -> [Package] -> [Package]
+eval AllPackages pkgs = pkgs
+eval (DependsOn n sub) pkgs = 
+    let scope = eval sub pkgs
+        transitiveNames = getTransitiveDeps n pkgs []
+    in filter (\p -> attribute_name p `elem` transitiveNames) scope
+eval (And e1 e2) pkgs = eval e2 (eval e1 pkgs)
