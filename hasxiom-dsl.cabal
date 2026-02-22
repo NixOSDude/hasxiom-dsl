@@ -7,7 +7,10 @@ maintainer:         nixdude@gmail.com
 build-type:         Simple
 
 common shared-properties
-    ghc-options:      -Wall -O2 -threaded
+    -- Tenet: Optimization for 20-Core Arrow Lake (265KF)
+    -- -threaded: Enable multi-core runtime
+    -- -with-rtsopts: -N20 (all cores), -qg (parallel GC)
+    ghc-options:      -Wall -O2 -threaded "-with-rtsopts=-N20 -qg"
     build-depends:
         base >= 4.14 && < 5,
         aeson,
