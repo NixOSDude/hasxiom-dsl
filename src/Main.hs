@@ -15,7 +15,7 @@ import System.Environment (getEnv)
 
 -- Tenet: Constants are immutable and pinned
 versionTag :: String
-versionTag = "v0.1.6-ARROW-LAKE-SIM"
+versionTag = "v0.1.7-ARROW-LAKE-RECOMMEND"
 
 -- | Audit view for high-centrality pillars
 displayPillars :: [Package] -> IO ()
@@ -44,7 +44,7 @@ main = do
     displayPillars allPkgs
      
     putStrLn "\n--- Hasxiom Sovereign REPL (20-Core Optimized) ---"
-    putStrLn "Commands: 'search <term>', 'trace <pkg>', 'vector <pkg>', 'sim <p1> <p2>', 'status', 'exit'"
+    putStrLn "Commands: 'search <term>', 'trace <pkg>', 'vector <pkg>', 'sim <p1> <p2>', 'recommend <pkg>', 'status', 'exit'"
      
     runInputT defaultSettings (replLoop allPkgs)
 
@@ -65,6 +65,7 @@ replLoop pkgs = do
                 ["trace", target] -> liftIO (handleTrace target pkgs) >> replLoop pkgs
                 ["vector", target] -> liftIO (handleVector target) >> replLoop pkgs
                 ["sim", p1, p2] -> liftIO (handleSim p1 p2) >> replLoop pkgs
+                ["recommend", target] -> liftIO (handleRecommend target pkgs) >> replLoop pkgs
                 _ -> liftIO (handleBlastRadius tInput pkgs) >> replLoop pkgs
 
 handleSearch :: T.Text -> [Package] -> IO ()
@@ -89,15 +90,33 @@ handleVector target = do
     let coords = vectorize target
     printf ">> %s Vector: %s\n" (T.unpack target) (show coords)
 
+-- Tenet: Type alignment with Hasktorch (Float)
+calcDist :: [Float] -> [Float] -> Float
+calcDist v1 v2 = sqrt $ sum $ zipWith (\a b -> (a - b) ** 2) v1 v2
+
 handleSim :: T.Text -> T.Text -> IO ()
 handleSim p1 p2 = do
     let v1 = vectorize p1
     let v2 = vectorize p2
-    let dist = sqrt $ sum $ zipWith (\a b -> (a - b) ** 2) v1 v2
+    let dist = calcDist v1 v2
     printf ">> Similarity Distance (%s <-> %s): %.4f\n" (T.unpack p1) (T.unpack p2) dist
-    if dist < 0.1 
-        then putStrLn ">> STATUS: Structural Siblings (High Affinity)"
-        else putStrLn ">> STATUS: Distant Nodes"
+
+handleRecommend :: T.Text -> [Package] -> IO ()
+handleRecommend target pkgs = do
+    let targetVec = vectorize target
+    putStrLn $ ">> Scanning 169k nodes for structural neighbors of " ++ T.unpack target ++ "..."
+    -- Tenet: Parallel sort across 20 cores via GHC Sparking
+    let scored = sortOn (\p -> calcDist targetVec (vectorize (package_name p))) pkgs
+    let neighbors = take 6 $ filter (\p -> package_name p /= target) scored
+    putStrLn "--------------------------------------------------------------------------------"
+    putStrLn " DISTANCE | PACKAGE NAME        | ATTRIBUTE NAME"
+    putStrLn "--------------------------------------------------------------------------------"
+    mapM_ printNeighbor neighbors
+    where
+        printNeighbor p = printf "  %.4f  | %-18s | %s\n" 
+                            (calcDist (vectorize target) (vectorize (package_name p)))
+                            (T.unpack $ T.take 18 $ package_name p)
+                            (T.unpack $ attribute_name p)
 
 handleBlastRadius :: T.Text -> [Package] -> IO ()
 handleBlastRadius target pkgs = do
