@@ -6,6 +6,7 @@ import Hasxiom.Core
 import qualified Data.Text as T
 import qualified Data.Text.Encoding as TE
 import System.Console.Haskeline
+import Control.Monad.IO.Class (liftIO)
 import Data.List (sortOn)
 import Data.Ord (Down(..))
 import Text.Printf (printf)
@@ -14,7 +15,7 @@ import System.Environment (getEnv)
 
 -- Tenet: Constants are immutable and pinned
 versionTag :: String
-versionTag = "v0.1.5-20CORE-TENSOR-ALPHA"
+versionTag = "v0.1.6-ARROW-LAKE-SIM"
 
 -- | Audit view for high-centrality pillars
 displayPillars :: [Package] -> IO ()
@@ -43,7 +44,7 @@ main = do
     displayPillars allPkgs
      
     putStrLn "\n--- Hasxiom Sovereign REPL (20-Core Optimized) ---"
-    putStrLn "Commands: 'search <term>', 'trace <pkg>', 'vector <pkg>', 'status', 'exit'"
+    putStrLn "Commands: 'search <term>', 'trace <pkg>', 'vector <pkg>', 'sim <p1> <p2>', 'status', 'exit'"
      
     runInputT defaultSettings (replLoop allPkgs)
 
@@ -55,55 +56,50 @@ replLoop pkgs = do
         Just "exit" -> outputStrLn "Sovereign State Suspended."
         Just "status" -> do
             outputStrLn $ ">> Total Managed Nodes: " ++ show (length pkgs)
-            outputStrLn $ ">> Named Entities: " ++ show (length $ filter (\p -> description p /= "") pkgs)
             replLoop pkgs
         Just "" -> replLoop pkgs
         Just input -> do
             let tInput = T.pack input
-            if "search " `T.isPrefixOf` tInput
-                then handleSearch (T.drop 7 tInput) pkgs
-                else if "trace " `T.isPrefixOf` tInput
-                    then handleTrace (T.drop 6 tInput) pkgs
-                    else if "vector " `T.isPrefixOf` tInput
-                        then handleVector (T.drop 7 tInput)
-                        else handleBlastRadius tInput pkgs
-            replLoop pkgs
+            case T.words tInput of
+                ["search", term] -> liftIO (handleSearch term pkgs) >> replLoop pkgs
+                ["trace", target] -> liftIO (handleTrace target pkgs) >> replLoop pkgs
+                ["vector", target] -> liftIO (handleVector target) >> replLoop pkgs
+                ["sim", p1, p2] -> liftIO (handleSim p1 p2) >> replLoop pkgs
+                _ -> liftIO (handleBlastRadius tInput pkgs) >> replLoop pkgs
 
-handleSearch :: T.Text -> [Package] -> InputT IO ()
+handleSearch :: T.Text -> [Package] -> IO ()
 handleSearch term pkgs = do
     let results = eval (Search term) pkgs
-    outputStrLn $ ">> Found " ++ show (length results) ++ " metadata matches."
+    putStrLn $ ">> Found " ++ show (length results) ++ " metadata matches."
     mapM_ printSummary (take 5 results)
     where
-        printSummary p = outputStrLn $ "  - [" ++ T.unpack (attribute_name p) ++ "] " 
-                         ++ T.unpack (package_name p) ++ ": " 
-                         ++ T.unpack (T.take 60 (description p)) ++ "..."
+        printSummary p = putStrLn $ "  - [" ++ T.unpack (attribute_name p) ++ "] " 
+                         ++ T.unpack (package_name p)
 
-handleTrace :: T.Text -> [Package] -> InputT IO ()
+handleTrace :: T.Text -> [Package] -> IO ()
 handleTrace target pkgs = do
     let lineage = getTransitiveDeps target pkgs []
-    outputStrLn $ ">> Lineage for " ++ T.unpack target ++ ":"
+    putStrLn $ ">> Lineage for " ++ T.unpack target ++ ":"
     if null lineage
-        then outputStrLn "  [Leaf Node or No Downstream Consumers]"
-        else mapM_ (outputStrLn . ("  -> " ++) . T.unpack) (take 15 lineage)
+        then putStrLn "  [Leaf Node or No Downstream Consumers]"
+        else mapM_ (putStrLn . ("  -> " ++) . T.unpack) (take 10 lineage)
 
--- | 4D Tensor Fingerprinting Command
-handleVector :: T.Text -> InputT IO ()
+handleVector :: T.Text -> IO ()
 handleVector target = do
     let coords = vectorize target
-    outputStrLn $ ">> Fingerprinting: " ++ T.unpack target
-    outputStrLn $ ">> 4D Tensor Coordinates: " ++ show coords
-    outputStrLn $ "   [ CUDA: " ++ show (head coords) ++ 
-                  " | GHC: " ++ show (coords !! 1) ++ 
-                  " | LIB: " ++ show (coords !! 2) ++ 
-                  " | HASH: " ++ show (coords !! 3) ++ " ]"
+    printf ">> %s Vector: %s\n" (T.unpack target) (show coords)
 
-handleBlastRadius :: T.Text -> [Package] -> InputT IO ()
+handleSim :: T.Text -> T.Text -> IO ()
+handleSim p1 p2 = do
+    let v1 = vectorize p1
+    let v2 = vectorize p2
+    let dist = sqrt $ sum $ zipWith (\a b -> (a - b) ** 2) v1 v2
+    printf ">> Similarity Distance (%s <-> %s): %.4f\n" (T.unpack p1) (T.unpack p2) dist
+    if dist < 0.1 
+        then putStrLn ">> STATUS: Structural Siblings (High Affinity)"
+        else putStrLn ">> STATUS: Distant Nodes"
+
+handleBlastRadius :: T.Text -> [Package] -> IO ()
 handleBlastRadius target pkgs = do
     let results = eval (DependsOn target AllPackages) pkgs
-    let impact  = length results
-    outputStrLn $ "Target: " ++ T.unpack target
-    outputStrLn $ "Blast Radius: " ++ show impact ++ " downstream nodes."
-    if impact > 0
-        then mapM_ (outputStrLn . ("  - " ++) . T.unpack . attribute_name) (take 5 results)
-        else outputStrLn "No downstream impact found."
+    printf ">> Target: %s | Blast Radius: %d nodes\n" (T.unpack target) (length results)
