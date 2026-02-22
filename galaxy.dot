@@ -1,2002 +1,3009 @@
-digraph G { rankdir=LR; node [shape=box, style=filled, color=lightblue];
-
-
-
-
-
-
-
-
-
-
-"libstemmer-2.2.0.drv" -> "perl-5.40.0.drv";
-"libstemmer-2.2.0.drv" -> "stdenv-linux.drv";
-"libstemmer-2.2.0.drv" -> "bash-5.3p3.drv";
-"libstemmer-2.2.0.drv" -> "source-stdenv.sh";
-"libstemmer-2.2.0.drv" -> "default-builder.sh";
-"libstemmer-2.2.0.drv" -> "source.drv";
-
-
-
-
-
-
-
-
-
-
-
-
-"libedit-20251016-3.1.tar.gz.drv" -> "mirrors-list.drv";
-"libedit-20251016-3.1.tar.gz.drv" -> "stdenv-linux.drv";
-"libedit-20251016-3.1.tar.gz.drv" -> "bash-5.3p3.drv";
-"libedit-20251016-3.1.tar.gz.drv" -> "source-stdenv.sh";
-"libedit-20251016-3.1.tar.gz.drv" -> "curl-8.18.0.drv";
-"libedit-20251016-3.1.tar.gz.drv" -> "builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"ExtUtils-Config-0.008.tar.gz.drv" -> "mirrors-list.drv";
-"ExtUtils-Config-0.008.tar.gz.drv" -> "stdenv-linux.drv";
-"ExtUtils-Config-0.008.tar.gz.drv" -> "bash-5.3p3.drv";
-"ExtUtils-Config-0.008.tar.gz.drv" -> "source-stdenv.sh";
-"ExtUtils-Config-0.008.tar.gz.drv" -> "curl-8.18.0.drv";
-"ExtUtils-Config-0.008.tar.gz.drv" -> "builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"perl5.40.0-CGI-4.59.drv" -> "CGI-4.59.tar.gz.drv";
-"perl5.40.0-CGI-4.59.drv" -> "builder.sh";
-"perl5.40.0-CGI-4.59.drv" -> "perl-5.40.0.drv";
-"perl5.40.0-CGI-4.59.drv" -> "perl5.40.0-Test-NoWarnings-1.06.drv";
-"perl5.40.0-CGI-4.59.drv" -> "stdenv-linux.drv";
-"perl5.40.0-CGI-4.59.drv" -> "bash-5.3p3.drv";
-"perl5.40.0-CGI-4.59.drv" -> "source-stdenv.sh";
-"perl5.40.0-CGI-4.59.drv" -> "perl5.40.0-Test-Deep-1.204.drv";
-"perl5.40.0-CGI-4.59.drv" -> "perl5.40.0-Test-Warn-0.37.drv";
-"perl5.40.0-CGI-4.59.drv" -> "perl5.40.0-HTML-Parser-3.81.drv";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"HTTP-4000.4.1.tar.gz.drv" -> "mirrors-list.drv";
-"HTTP-4000.4.1.tar.gz.drv" -> "stdenv-linux.drv";
-"HTTP-4000.4.1.tar.gz.drv" -> "bash-5.3p3.drv";
-"HTTP-4000.4.1.tar.gz.drv" -> "source-stdenv.sh";
-"HTTP-4000.4.1.tar.gz.drv" -> "curl-8.18.0.drv";
-"HTTP-4000.4.1.tar.gz.drv" -> "builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"llvm-21.1.7.drv" -> "ncurses-6.5.drv";
-"llvm-21.1.7.drv" -> "libpfm-4.13.0.drv";
-"llvm-21.1.7.drv" -> "llvm-src-21.1.7.drv";
-"llvm-21.1.7.drv" -> "libbfd-plugin-api-header.drv";
-"llvm-21.1.7.drv" -> "python3-3.13.11-env.drv";
-"llvm-21.1.7.drv" -> "llvm-tblgen-21.1.7.drv";
-"llvm-21.1.7.drv" -> "cmake-4.1.2.drv";
-"llvm-21.1.7.drv" -> "libffi-3.5.2.drv";
-"llvm-21.1.7.drv" -> "update-autotools-gnu-config-scripts-hook.drv";
-"llvm-21.1.7.drv" -> "zlib-1.3.1.drv";
-"llvm-21.1.7.drv" -> "gnu-install-dirs.patch";
-"llvm-21.1.7.drv" -> "stdenv-linux.drv";
-"llvm-21.1.7.drv" -> "polly-lit-cfg-add-libs-to-dylib-path.patch";
-"llvm-21.1.7.drv" -> "bash-5.3p3.drv";
-"llvm-21.1.7.drv" -> "llvm-lit-cfg-add-libs-to-dylib-path.patch";
-"llvm-21.1.7.drv" -> "lit-shell-script-runner-set-dyld-library-path.patch";
-"llvm-21.1.7.drv" -> "source-stdenv.sh";
-"llvm-21.1.7.drv" -> "gnu-install-dirs-polly.patch";
-"llvm-21.1.7.drv" -> "ninja-1.13.1.drv";
-"llvm-21.1.7.drv" -> "which-2.23.drv";
-"llvm-21.1.7.drv" -> "default-builder.sh";
-"llvm-21.1.7.drv" -> "libxml2-2.15.1.drv";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"wl-pprint-annotated-0.1.0.1.drv" -> "wl-pprint-annotated-0.1.0.1-r4.cabal.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "ghc-9.10.3.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "Setup.hs";
-"wl-pprint-annotated-0.1.0.1.drv" -> "haskell-generic-builder-test-wrapper.sh.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "glibc-locales-2.40-218.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "wl-pprint-annotated-0.1.0.1.tar.gz.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "unpretty-cabal-conf.awk";
-"wl-pprint-annotated-0.1.0.1.drv" -> "remove-references-to.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "stdenv-linux.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "bash-5.3p3.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "hscolour-1.25.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "source-stdenv.sh";
-"wl-pprint-annotated-0.1.0.1.drv" -> "tasty-1.5.3.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "tasty-hunit-0.10.2.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "coreutils-9.8.drv";
-"wl-pprint-annotated-0.1.0.1.drv" -> "default-builder.sh";
-"Only-0.1.tar.gz.drv" -> "mirrors-list.drv";
-"Only-0.1.tar.gz.drv" -> "stdenv-linux.drv";
-"Only-0.1.tar.gz.drv" -> "bash-5.3p3.drv";
-"Only-0.1.tar.gz.drv" -> "source-stdenv.sh";
-"Only-0.1.tar.gz.drv" -> "curl-8.18.0.drv";
-"Only-0.1.tar.gz.drv" -> "builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"bootstrap-tools.drv" -> "busybox.drv";
-"bootstrap-tools.drv" -> "unpack-bootstrap-tools.sh";
-"bootstrap-tools.drv" -> "bootstrap-tools.tar.xz.drv";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"quickcheck-instances-0.3.33.drv" -> "ghc-9.10.3.drv";
-"quickcheck-instances-0.3.33.drv" -> "OneTuple-0.4.2.drv";
-"quickcheck-instances-0.3.33.drv" -> "Setup.hs";
-"quickcheck-instances-0.3.33.drv" -> "hashable-1.5.0.0.drv";
-"quickcheck-instances-0.3.33.drv" -> "quickcheck-instances-0.3.33-r1.cabal.drv";
-"quickcheck-instances-0.3.33.drv" -> "haskell-generic-builder-test-wrapper.sh.drv";
-"quickcheck-instances-0.3.33.drv" -> "glibc-locales-2.40-218.drv";
-"quickcheck-instances-0.3.33.drv" -> "case-insensitive-1.2.1.0.drv";
-"quickcheck-instances-0.3.33.drv" -> "data-fix-0.3.4.drv";
-"quickcheck-instances-0.3.33.drv" -> "unordered-containers-0.2.20.1.drv";
-"quickcheck-instances-0.3.33.drv" -> "unpretty-cabal-conf.awk";
-"quickcheck-instances-0.3.33.drv" -> "integer-logarithms-1.0.4.drv";
-"quickcheck-instances-0.3.33.drv" -> "remove-references-to.drv";
-"quickcheck-instances-0.3.33.drv" -> "these-1.2.1.drv";
-"quickcheck-instances-0.3.33.drv" -> "old-time-1.1.0.4.drv";
-"quickcheck-instances-0.3.33.drv" -> "text-short-0.1.6.drv";
-"quickcheck-instances-0.3.33.drv" -> "stdenv-linux.drv";
-"quickcheck-instances-0.3.33.drv" -> "quickcheck-instances-0.3.33.tar.gz.drv";
-"quickcheck-instances-0.3.33.drv" -> "strict-0.5.1.drv";
-"quickcheck-instances-0.3.33.drv" -> "primitive-0.9.1.0.drv";
-"quickcheck-instances-0.3.33.drv" -> "uuid-types-1.0.6.drv";
-"quickcheck-instances-0.3.33.drv" -> "QuickCheck-2.15.0.1.drv";
-"quickcheck-instances-0.3.33.drv" -> "bash-5.3p3.drv";
-"quickcheck-instances-0.3.33.drv" -> "vector-0.13.2.0.drv";
-"quickcheck-instances-0.3.33.drv" -> "tagged-0.8.9.drv";
-"quickcheck-instances-0.3.33.drv" -> "splitmix-0.1.3.1.drv";
-"quickcheck-instances-0.3.33.drv" -> "hscolour-1.25.drv";
-"quickcheck-instances-0.3.33.drv" -> "scientific-0.3.8.0.drv";
-"quickcheck-instances-0.3.33.drv" -> "source-stdenv.sh";
-"quickcheck-instances-0.3.33.drv" -> "time-compat-1.9.8.drv";
-"quickcheck-instances-0.3.33.drv" -> "coreutils-9.8.drv";
-"quickcheck-instances-0.3.33.drv" -> "default-builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"perl5.40.0-TimeDate-2.33.drv" -> "builder.sh";
-"perl5.40.0-TimeDate-2.33.drv" -> "perl-5.40.0.drv";
-"perl5.40.0-TimeDate-2.33.drv" -> "stdenv-linux.drv";
-"perl5.40.0-TimeDate-2.33.drv" -> "TimeDate-2.33.tar.gz.drv";
-"perl5.40.0-TimeDate-2.33.drv" -> "bash-5.3p3.drv";
-"perl5.40.0-TimeDate-2.33.drv" -> "source-stdenv.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"python3.13-build-1.3.0.drv" -> "python-remove-bin-bytecode-hook.drv";
-"python3.13-build-1.3.0.drv" -> "python-imports-check-hook.sh.drv";
-"python3.13-build-1.3.0.drv" -> "python3.13-packaging-25.0.drv";
-"python3.13-build-1.3.0.drv" -> "pypa-build-hook.sh.drv";
-"python3.13-build-1.3.0.drv" -> "python-namespaces-hook.sh.drv";
-"python3.13-build-1.3.0.drv" -> "source.drv";
-"python3.13-build-1.3.0.drv" -> "wrap-python-hook.drv";
-"python3.13-build-1.3.0.drv" -> "python-relax-deps-hook.drv";
-"python3.13-build-1.3.0.drv" -> "python3.13-flit-core-3.12.0.drv";
-"python3.13-build-1.3.0.drv" -> "stdenv-linux.drv";
-"python3.13-build-1.3.0.drv" -> "bash-5.3p3.drv";
-"python3.13-build-1.3.0.drv" -> "pypa-install-hook.drv";
-"python3.13-build-1.3.0.drv" -> "python3.13-pyproject-hooks-1.2.0.drv";
-"python3.13-build-1.3.0.drv" -> "python-remove-tests-dir-hook.drv";
-"python3.13-build-1.3.0.drv" -> "source-stdenv.sh";
-"python3.13-build-1.3.0.drv" -> "python-output-dist-hook.drv";
-"python3.13-build-1.3.0.drv" -> "python3-3.13.11.drv";
-"python3.13-build-1.3.0.drv" -> "python-runtime-deps-check-hook.sh.drv";
-"python3.13-build-1.3.0.drv" -> "default-builder.sh";
-"python3.13-build-1.3.0.drv" -> "ensure-newer-sources-hook.drv";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"dlist-1.0-r2.cabal.drv" -> "mirrors-list.drv";
-"dlist-1.0-r2.cabal.drv" -> "stdenv-linux.drv";
-"dlist-1.0-r2.cabal.drv" -> "bash-5.3p3.drv";
-"dlist-1.0-r2.cabal.drv" -> "source-stdenv.sh";
-"dlist-1.0-r2.cabal.drv" -> "curl-8.18.0.drv";
-"dlist-1.0-r2.cabal.drv" -> "builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"packaging-25.0.tar.gz.drv" -> "mirrors-list.drv";
-"packaging-25.0.tar.gz.drv" -> "stdenv-linux.drv";
-"packaging-25.0.tar.gz.drv" -> "bash-5.3p3.drv";
-"packaging-25.0.tar.gz.drv" -> "source-stdenv.sh";
-"packaging-25.0.tar.gz.drv" -> "curl-8.18.0.drv";
-"packaging-25.0.tar.gz.drv" -> "builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"autoconf-2.72.drv" -> "bootstrap-tools.drv";
-"autoconf-2.72.drv" -> "perl-5.40.0.drv";
-"autoconf-2.72.drv" -> "texinfo-7.2.drv";
-"autoconf-2.72.drv" -> "gnum4-1.4.20.drv";
-"autoconf-2.72.drv" -> "autoconf-2.72.tar.xz.drv";
-"autoconf-2.72.drv" -> "source-stdenv.sh";
-"autoconf-2.72.drv" -> "default-builder.sh";
-"autoconf-2.72.drv" -> "bootstrap-stage4-stdenv-linux.drv";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"LWP-MediaTypes-6.04.tar.gz.drv" -> "mirrors-list.drv";
-"LWP-MediaTypes-6.04.tar.gz.drv" -> "stdenv-linux.drv";
-"LWP-MediaTypes-6.04.tar.gz.drv" -> "bash-5.3p3.drv";
-"LWP-MediaTypes-6.04.tar.gz.drv" -> "source-stdenv.sh";
-"LWP-MediaTypes-6.04.tar.gz.drv" -> "curl-8.18.0.drv";
-"LWP-MediaTypes-6.04.tar.gz.drv" -> "builder.sh";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+digraph Galaxy {
+  bgcolor="#1a1a1a";
+  outputorder="edgesfirst";
+  overlap=prism;
+  sep="+25";
+  edge [color="#444444", arrowsize=0.3, penwidth=0.6];
+  node [style=filled, fontname="Helvetica-Bold", fontsize=10, fontcolor=white, shape=rect, margin=0.1];
+  "xvidcore-1.3.7" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "xvidcore-1.3.7" -> "glibc-2.40-218";
+  "libassuan-3.0.2.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libassuan-3.0.2.drv" -> "stdenv-linux.drv";
+  "libassuan-3.0.2.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libassuan-3.0.2.drv" -> "source-stdenv.sh";
+  "libassuan-3.0.2.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "libassuan-3.0.2.drv" -> "default-builder.sh";
+  "libassuan-3.0.2.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "libassuan-3.0.2.drv" -> "bash-5.3p3.drv";
+  "libstemmer-2.2.0.drv" [fillcolor="#2c3e50"];
+  "perl-5.40.0.drv" [fillcolor="#2c3e50"];
+  "libstemmer-2.2.0.drv" -> "perl-5.40.0.drv";
+  "libstemmer-2.2.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libstemmer-2.2.0.drv" -> "stdenv-linux.drv";
+  "libstemmer-2.2.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "libstemmer-2.2.0.drv" -> "bash-5.3p3.drv";
+  "libstemmer-2.2.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libstemmer-2.2.0.drv" -> "source-stdenv.sh";
+  "libstemmer-2.2.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "libstemmer-2.2.0.drv" -> "default-builder.sh";
+  "patchutils-0.3.3.tar.xz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.tar.xz.drv" -> "stdenv-linux.drv";
+  "patchutils-0.3.3.tar.xz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.tar.xz.drv" -> "curl-8.17.0.drv";
+  "patchutils-0.3.3.tar.xz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.tar.xz.drv" -> "bash-5.3p9.drv";
+  "patchutils-0.3.3.tar.xz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "patchutils-0.3.3.tar.xz.drv" -> "source-stdenv.sh";
+  "patchutils-0.3.3.tar.xz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.tar.xz.drv" -> "mirrors-list.drv";
+  "patchutils-0.3.3.tar.xz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.tar.xz.drv" -> "builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.18.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "libedit-20251016-3.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "libedit-20251016-3.1.tar.gz.dr" -> "mirrors-list.drv";
+  "libedit-20251016-3.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libedit-20251016-3.1.tar.gz.dr" -> "stdenv-linux.drv";
+  "libedit-20251016-3.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "libedit-20251016-3.1.tar.gz.dr" -> "bash-5.3p3.drv";
+  "libedit-20251016-3.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libedit-20251016-3.1.tar.gz.dr" -> "source-stdenv.sh";
+  "libedit-20251016-3.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "libedit-20251016-3.1.tar.gz.dr" -> "curl-8.18.0.drv";
+  "libedit-20251016-3.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "libedit-20251016-3.1.tar.gz.dr" -> "builder.sh";
+  "dlist-1.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "dlist-1.0.tar.gz.drv" -> "bash-5.3p9.drv";
+  "dlist-1.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "dlist-1.0.tar.gz.drv" -> "curl-8.17.0.drv";
+  "dlist-1.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "dlist-1.0.tar.gz.drv" -> "stdenv-linux.drv";
+  "dlist-1.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "dlist-1.0.tar.gz.drv" -> "source-stdenv.sh";
+  "dlist-1.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "dlist-1.0.tar.gz.drv" -> "mirrors-list.drv";
+  "dlist-1.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "dlist-1.0.tar.gz.drv" -> "builder.sh";
+  "roxmltree-0.20.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "roxmltree-0.20.0.tar.gz.drv" -> "mirrors-list.drv";
+  "roxmltree-0.20.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "roxmltree-0.20.0.tar.gz.drv" -> "stdenv-linux.drv";
+  "roxmltree-0.20.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "roxmltree-0.20.0.tar.gz.drv" -> "bash-5.3p3.drv";
+  "roxmltree-0.20.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "roxmltree-0.20.0.tar.gz.drv" -> "source-stdenv.sh";
+  "roxmltree-0.20.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "roxmltree-0.20.0.tar.gz.drv" -> "curl-8.18.0.drv";
+  "roxmltree-0.20.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "roxmltree-0.20.0.tar.gz.drv" -> "builder.sh";
+  "etc-bashrc" [fillcolor="#2c3e50"];
+  "coreutils-9.8" [fillcolor="#2c3e50"];
+  "etc-bashrc" -> "coreutils-9.8";
+  "pth-2.0.7.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "pth-2.0.7.tar.gz.drv" -> "mirrors-list.drv";
+  "pth-2.0.7.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "pth-2.0.7.tar.gz.drv" -> "stdenv-linux.drv";
+  "pth-2.0.7.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "pth-2.0.7.tar.gz.drv" -> "bash-5.3p3.drv";
+  "pth-2.0.7.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "pth-2.0.7.tar.gz.drv" -> "source-stdenv.sh";
+  "pth-2.0.7.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "pth-2.0.7.tar.gz.drv" -> "curl-8.18.0.drv";
+  "pth-2.0.7.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "pth-2.0.7.tar.gz.drv" -> "builder.sh";
+  "exfat-1.4.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "exfat-1.4.0.drv" -> "stdenv-linux.drv";
+  "exfat-1.4.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "exfat-1.4.0.drv" -> "bash-5.3p3.drv";
+  "exfat-1.4.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "exfat-1.4.0.drv" -> "source-stdenv.sh";
+  "exfat-1.4.0.drv" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "exfat-1.4.0.drv" -> "pkg-config-wrapper-0.29.2.drv";
+  "exfat-1.4.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "exfat-1.4.0.drv" -> "default-builder.sh";
+  "exfat-1.4.0.drv" [fillcolor="#2c3e50"];
+  "autoreconf-hook.drv" [fillcolor="#2c3e50"];
+  "exfat-1.4.0.drv" -> "autoreconf-hook.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p9.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.17.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "config-ini-0.2.7.0-r1.cabal.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "config-ini-0.2.7.0-r1.cabal.dr" -> "bash-5.3p9.drv";
+  "config-ini-0.2.7.0-r1.cabal.dr" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "config-ini-0.2.7.0-r1.cabal.dr" -> "curl-8.17.0.drv";
+  "config-ini-0.2.7.0-r1.cabal.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "config-ini-0.2.7.0-r1.cabal.dr" -> "stdenv-linux.drv";
+  "config-ini-0.2.7.0-r1.cabal.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "config-ini-0.2.7.0-r1.cabal.dr" -> "source-stdenv.sh";
+  "config-ini-0.2.7.0-r1.cabal.dr" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "config-ini-0.2.7.0-r1.cabal.dr" -> "mirrors-list.drv";
+  "config-ini-0.2.7.0-r1.cabal.dr" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "config-ini-0.2.7.0-r1.cabal.dr" -> "builder.sh";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-pysocks-1.7.1.drv" -> "ensure-newer-sources-hook.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "python-remove-bin-bytecode-hoo";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "python3-3.13.11.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "stdenv-linux.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "wrap-python-hook.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "python-namespaces-hook.sh.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "python-remove-tests-dir-hook.d";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "python-output-dist-hook.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-pysocks-1.7.1.drv" -> "source-stdenv.sh";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "python-catch-conflicts-hook.dr" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "python-catch-conflicts-hook.dr";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "pypa-install-hook.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "default-builder.sh";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "bash-5.3p3.drv";
+  "python3.13-pysocks-1.7.1.drv" [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-pysocks-1.7.1.drv" -> "python-imports-check-hook.sh.d";
+  "nettle-3.10.2" [fillcolor="#2c3e50"];
+  "gmp-with-cxx-6.3.0" [fillcolor="#2c3e50"];
+  "nettle-3.10.2" -> "gmp-with-cxx-6.3.0";
+  "nettle-3.10.2" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "nettle-3.10.2" -> "glibc-2.40-218";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-toposort-1.10.drv" -> "ensure-newer-sources-hook.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python-remove-bin-bytecode-hoo";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python3-3.13.11.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "stdenv-linux.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "wrap-python-hook.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python-namespaces-hook.sh.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python-remove-tests-dir-hook.d";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python3.13-setuptools-80.9.0.d";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python-output-dist-hook.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "pypa-build-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "pypa-build-hook.sh.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-toposort-1.10.drv" -> "source-stdenv.sh";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python-catch-conflicts-hook.dr" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python-catch-conflicts-hook.dr";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "pypa-install-hook.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "default-builder.sh";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "bash-5.3p3.drv";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python-runtime-deps-check-hook" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python-runtime-deps-check-hook";
+  "python3.13-toposort-1.10.drv" [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-toposort-1.10.drv" -> "python-imports-check-hook.sh.d";
+  "gobject-introspection-1.86.0.d" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "gobject-introspection-1.86.0.d" -> "bash-5.3p9.drv";
+  "gobject-introspection-1.86.0.d" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "gobject-introspection-1.86.0.d" -> "pkg-config-wrapper-0.29.2.drv";
+  "gobject-introspection-1.86.0.d" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "gobject-introspection-1.86.0.d" -> "source-stdenv.sh";
+  "gobject-introspection-1.86.0.d" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "gobject-introspection-1.86.0.d" -> "stdenv-linux.drv";
+  "gobject-introspection-1.86.0.d" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "gobject-introspection-1.86.0.d" -> "default-builder.sh";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "glibc-2.40-218-dev" [fillcolor="#2c3e50"];
+  "OneTuple-0.4.2" -> "glibc-2.40-218-dev";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "ncurses-6.5" [fillcolor="#2c3e50"];
+  "OneTuple-0.4.2" -> "ncurses-6.5";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "gmp-with-cxx-6.3.0" [fillcolor="#2c3e50"];
+  "OneTuple-0.4.2" -> "gmp-with-cxx-6.3.0";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "numactl-2.0.18" [fillcolor="#2c3e50"];
+  "OneTuple-0.4.2" -> "numactl-2.0.18";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "libffi-3.5.2" [fillcolor="#2c3e50"];
+  "OneTuple-0.4.2" -> "libffi-3.5.2";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "elfutils-0.194" [fillcolor="#2c3e50"];
+  "OneTuple-0.4.2" -> "elfutils-0.194";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "ghc-9.10.3" [fillcolor="#27ae60"];
+  "OneTuple-0.4.2" -> "ghc-9.10.3";
+  "OneTuple-0.4.2" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "OneTuple-0.4.2" -> "glibc-2.40-218";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "python-remove-bin-bytecode-hoo";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "python-imports-check-hook.sh.d";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-pytest-asyncio-1.3." -> "ensure-newer-sources-hook.drv";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "python-output-dist-hook.drv";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "python3-3.13.11.drv";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "pypa-install-hook.drv";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "bash-5.3p9.drv";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "wrap-python-hook.drv";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-pytest-asyncio-1.3." -> "source-stdenv.sh";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "default-builder.sh";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "python-remove-tests-dir-hook.d";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "stdenv-linux.drv";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "python-catch-conflicts-hook.dr" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "python-catch-conflicts-hook.dr";
+  "python3.13-pytest-asyncio-1.3." [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-pytest-asyncio-1.3." -> "python-namespaces-hook.sh.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "kf6-move-outputs-hook.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "kf6-move-outputs-hook.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "qtbase-6.10.1.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "qtbase-6.10.1.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "cmake-4.1.2.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "cmake-4.1.2.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "kcoreaddons-6.20.0.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "kcoreaddons-6.20.0.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "stdenv-linux.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "extra-cmake-modules-6.20.0.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "extra-cmake-modules-6.20.0.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "bash-5.3p3.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "wrap-qt6-apps-hook.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "wrap-qt6-apps-hook.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "kaccounts-integration-25.08.3." -> "source-stdenv.sh";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "separate-debug-info.sh";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "ninja-1.13.1.drv";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "default-builder.sh";
+  "kaccounts-integration-25.08.3." [fillcolor="#2c3e50"];
+  "ki18n-6.20.0.drv" [fillcolor="#2c3e50"];
+  "kaccounts-integration-25.08.3." -> "ki18n-6.20.0.drv";
+  "kpsewhich.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "kpsewhich.drv" -> "stdenv-linux.drv";
+  "kpsewhich.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "kpsewhich.drv" -> "bash-5.3p3.drv";
+  "kpsewhich.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "kpsewhich.drv" -> "source-stdenv.sh";
+  "kpsewhich.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "kpsewhich.drv" -> "default-builder.sh";
+  "pixman-0.46.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "pixman-0.46.4.tar.gz.drv" -> "stdenv-linux.drv";
+  "pixman-0.46.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "pixman-0.46.4.tar.gz.drv" -> "curl-8.18.0.drv";
+  "pixman-0.46.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "pixman-0.46.4.tar.gz.drv" -> "mirrors-list.drv";
+  "pixman-0.46.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "pixman-0.46.4.tar.gz.drv" -> "source-stdenv.sh";
+  "pixman-0.46.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "pixman-0.46.4.tar.gz.drv" -> "bash-5.3p3.drv";
+  "pixman-0.46.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "pixman-0.46.4.tar.gz.drv" -> "builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.18.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "directory-ospath-streaming-0.2" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "directory-ospath-streaming-0.2" -> "bash-5.3p9.drv";
+  "directory-ospath-streaming-0.2" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "directory-ospath-streaming-0.2" -> "curl-8.17.0.drv";
+  "directory-ospath-streaming-0.2" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "directory-ospath-streaming-0.2" -> "stdenv-linux.drv";
+  "directory-ospath-streaming-0.2" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "directory-ospath-streaming-0.2" -> "source-stdenv.sh";
+  "directory-ospath-streaming-0.2" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "directory-ospath-streaming-0.2" -> "mirrors-list.drv";
+  "directory-ospath-streaming-0.2" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "directory-ospath-streaming-0.2" -> "builder.sh";
+  "fuzzy-0.1.1.0-doc" [fillcolor="#2c3e50"];
+  "ghc-9.10.3-doc" [fillcolor="#27ae60"];
+  "fuzzy-0.1.1.0-doc" -> "ghc-9.10.3-doc";
+  "hlint-3.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "hlint-3.10.tar.gz.drv" -> "bash-5.3p9.drv";
+  "hlint-3.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "hlint-3.10.tar.gz.drv" -> "curl-8.17.0.drv";
+  "hlint-3.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "hlint-3.10.tar.gz.drv" -> "stdenv-linux.drv";
+  "hlint-3.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "hlint-3.10.tar.gz.drv" -> "source-stdenv.sh";
+  "hlint-3.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "hlint-3.10.tar.gz.drv" -> "mirrors-list.drv";
+  "hlint-3.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "hlint-3.10.tar.gz.drv" -> "builder.sh";
+  "doctest-parallel-0.4-r1.cabal." [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "doctest-parallel-0.4-r1.cabal." -> "bash-5.3p9.drv";
+  "doctest-parallel-0.4-r1.cabal." [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "doctest-parallel-0.4-r1.cabal." -> "curl-8.17.0.drv";
+  "doctest-parallel-0.4-r1.cabal." [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "doctest-parallel-0.4-r1.cabal." -> "stdenv-linux.drv";
+  "doctest-parallel-0.4-r1.cabal." [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "doctest-parallel-0.4-r1.cabal." -> "source-stdenv.sh";
+  "doctest-parallel-0.4-r1.cabal." [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "doctest-parallel-0.4-r1.cabal." -> "mirrors-list.drv";
+  "doctest-parallel-0.4-r1.cabal." [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "doctest-parallel-0.4-r1.cabal." -> "builder.sh";
+  "libpciaccess-0.18.1.tar.xz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libpciaccess-0.18.1.tar.xz.drv" -> "stdenv-linux.drv";
+  "libpciaccess-0.18.1.tar.xz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "libpciaccess-0.18.1.tar.xz.drv" -> "curl-8.18.0.drv";
+  "libpciaccess-0.18.1.tar.xz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "libpciaccess-0.18.1.tar.xz.drv" -> "mirrors-list.drv";
+  "libpciaccess-0.18.1.tar.xz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libpciaccess-0.18.1.tar.xz.drv" -> "source-stdenv.sh";
+  "libpciaccess-0.18.1.tar.xz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "libpciaccess-0.18.1.tar.xz.drv" -> "bash-5.3p3.drv";
+  "libpciaccess-0.18.1.tar.xz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "libpciaccess-0.18.1.tar.xz.drv" -> "builder.sh";
+  "fix-aarch64_fregs.patch.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "fix-aarch64_fregs.patch.drv" -> "stdenv-linux.drv";
+  "fix-aarch64_fregs.patch.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "fix-aarch64_fregs.patch.drv" -> "curl-8.18.0.drv";
+  "fix-aarch64_fregs.patch.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "fix-aarch64_fregs.patch.drv" -> "mirrors-list.drv";
+  "fix-aarch64_fregs.patch.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "fix-aarch64_fregs.patch.drv" -> "source-stdenv.sh";
+  "fix-aarch64_fregs.patch.drv" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.drv" [fillcolor="#2c3e50"];
+  "fix-aarch64_fregs.patch.drv" -> "patchutils-0.3.3.drv";
+  "fix-aarch64_fregs.patch.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "fix-aarch64_fregs.patch.drv" -> "bash-5.3p3.drv";
+  "fix-aarch64_fregs.patch.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "fix-aarch64_fregs.patch.drv" -> "builder.sh";
+  "20ea5b46aaf1e7bdf9d6905ba8bece" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "20ea5b46aaf1e7bdf9d6905ba8bece" -> "mirrors-list.drv";
+  "20ea5b46aaf1e7bdf9d6905ba8bece" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.drv" [fillcolor="#2c3e50"];
+  "20ea5b46aaf1e7bdf9d6905ba8bece" -> "patchutils-0.3.3.drv";
+  "20ea5b46aaf1e7bdf9d6905ba8bece" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "20ea5b46aaf1e7bdf9d6905ba8bece" -> "stdenv-linux.drv";
+  "20ea5b46aaf1e7bdf9d6905ba8bece" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "20ea5b46aaf1e7bdf9d6905ba8bece" -> "bash-5.3p3.drv";
+  "20ea5b46aaf1e7bdf9d6905ba8bece" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "20ea5b46aaf1e7bdf9d6905ba8bece" -> "source-stdenv.sh";
+  "20ea5b46aaf1e7bdf9d6905ba8bece" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "20ea5b46aaf1e7bdf9d6905ba8bece" -> "curl-8.18.0.drv";
+  "20ea5b46aaf1e7bdf9d6905ba8bece" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "20ea5b46aaf1e7bdf9d6905ba8bece" -> "builder.sh";
+  "db-4.8.30" [fillcolor="#2c3e50"];
+  "gcc-14.3.0-lib" [fillcolor="#2c3e50"];
+  "db-4.8.30" -> "gcc-14.3.0-lib";
+  "db-4.8.30" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "db-4.8.30" -> "glibc-2.40-218";
+  "glib-2.86.3-dev" [fillcolor="#2c3e50"];
+  "bash-5.3p3" [fillcolor="#2c3e50"];
+  "glib-2.86.3-dev" -> "bash-5.3p3";
+  "glib-2.86.3-dev" [fillcolor="#2c3e50"];
+  "elfutils-0.194" [fillcolor="#2c3e50"];
+  "glib-2.86.3-dev" -> "elfutils-0.194";
+  "glib-2.86.3-dev" [fillcolor="#2c3e50"];
+  "gettext-0.25.1" [fillcolor="#2c3e50"];
+  "glib-2.86.3-dev" -> "gettext-0.25.1";
+  "glib-2.86.3-dev" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "glib-2.86.3-dev" -> "glibc-2.40-218";
+  "glib-2.86.3-dev" [fillcolor="#2c3e50"];
+  "glib-2.86.3" [fillcolor="#2c3e50"];
+  "glib-2.86.3-dev" -> "glib-2.86.3";
+  "ExtUtils-Config-0.008.tar.gz.d" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "ExtUtils-Config-0.008.tar.gz.d" -> "mirrors-list.drv";
+  "ExtUtils-Config-0.008.tar.gz.d" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "ExtUtils-Config-0.008.tar.gz.d" -> "stdenv-linux.drv";
+  "ExtUtils-Config-0.008.tar.gz.d" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "ExtUtils-Config-0.008.tar.gz.d" -> "bash-5.3p3.drv";
+  "ExtUtils-Config-0.008.tar.gz.d" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "ExtUtils-Config-0.008.tar.gz.d" -> "source-stdenv.sh";
+  "ExtUtils-Config-0.008.tar.gz.d" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "ExtUtils-Config-0.008.tar.gz.d" -> "curl-8.18.0.drv";
+  "ExtUtils-Config-0.008.tar.gz.d" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "ExtUtils-Config-0.008.tar.gz.d" -> "builder.sh";
+  "cuda12.8-cuda_cccl-12.8.90.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "cuda12.8-cuda_cccl-12.8.90.drv" -> "bash-5.3p9.drv";
+  "cuda12.8-cuda_cccl-12.8.90.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "cuda12.8-cuda_cccl-12.8.90.drv" -> "source-stdenv.sh";
+  "cuda12.8-cuda_cccl-12.8.90.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "cuda12.8-cuda_cccl-12.8.90.drv" -> "default-builder.sh";
+  "publicsuffix-list-0-unstable-2" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "publicsuffix-list-0-unstable-2" -> "stdenv-linux.drv";
+  "publicsuffix-list-0-unstable-2" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "publicsuffix-list-0-unstable-2" -> "source-stdenv.sh";
+  "publicsuffix-list-0-unstable-2" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "publicsuffix-list-0-unstable-2" -> "default-builder.sh";
+  "publicsuffix-list-0-unstable-2" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "publicsuffix-list-0-unstable-2" -> "bash-5.3p3.drv";
+  "tar-0.6.4.0-r4.cabal.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "tar-0.6.4.0-r4.cabal.drv" -> "bash-5.3p9.drv";
+  "tar-0.6.4.0-r4.cabal.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "tar-0.6.4.0-r4.cabal.drv" -> "curl-8.17.0.drv";
+  "tar-0.6.4.0-r4.cabal.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "tar-0.6.4.0-r4.cabal.drv" -> "stdenv-linux.drv";
+  "tar-0.6.4.0-r4.cabal.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "tar-0.6.4.0-r4.cabal.drv" -> "source-stdenv.sh";
+  "tar-0.6.4.0-r4.cabal.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "tar-0.6.4.0-r4.cabal.drv" -> "mirrors-list.drv";
+  "tar-0.6.4.0-r4.cabal.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "tar-0.6.4.0-r4.cabal.drv" -> "builder.sh";
+  "crate-camino-1.1.6.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "crate-camino-1.1.6.tar.gz.drv" -> "stdenv-linux.drv";
+  "crate-camino-1.1.6.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "crate-camino-1.1.6.tar.gz.drv" -> "curl-8.18.0.drv";
+  "crate-camino-1.1.6.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "crate-camino-1.1.6.tar.gz.drv" -> "mirrors-list.drv";
+  "crate-camino-1.1.6.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "crate-camino-1.1.6.tar.gz.drv" -> "source-stdenv.sh";
+  "crate-camino-1.1.6.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "crate-camino-1.1.6.tar.gz.drv" -> "bash-5.3p3.drv";
+  "crate-camino-1.1.6.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "crate-camino-1.1.6.tar.gz.drv" -> "builder.sh";
+  "gnugrep-3.12" [fillcolor="#2c3e50"];
+  "glibc-2.42-47" [fillcolor="#2c3e50"];
+  "gnugrep-3.12" -> "glibc-2.42-47";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "openssl-3.6.1.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "openssl-3.6.1.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "systemd-258.3.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "systemd-258.3.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "meson-1.9.1.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "meson-1.9.1.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "zlib-1.3.1.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "zlib-1.3.1.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "stdenv-linux.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "bash-5.3p3.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "xwayland-24.1.9.drv" -> "source-stdenv.sh";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "pkg-config-wrapper-0.29.2.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "ninja-1.13.1.drv";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "default-builder.sh";
+  "xwayland-24.1.9.drv" [fillcolor="#2c3e50"];
+  "bash-interactive-5.3p3.drv" [fillcolor="#2c3e50"];
+  "xwayland-24.1.9.drv" -> "bash-interactive-5.3p3.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "kf6-move-outputs-hook.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "kf6-move-outputs-hook.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "qtbase-6.10.1.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "qtbase-6.10.1.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "cmake-4.1.2.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "cmake-4.1.2.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "stdenv-linux.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "extra-cmake-modules-6.20.0.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "extra-cmake-modules-6.20.0.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "bash-5.3p3.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "wrap-qt6-apps-hook.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "wrap-qt6-apps-hook.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "kdecoration-6.5.5.drv" -> "source-stdenv.sh";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "separate-debug-info.sh";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "ninja-1.13.1.drv";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "default-builder.sh";
+  "kdecoration-6.5.5.drv" [fillcolor="#2c3e50"];
+  "ki18n-6.20.0.drv" [fillcolor="#2c3e50"];
+  "kdecoration-6.5.5.drv" -> "ki18n-6.20.0.drv";
+  "perl-5.42.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "perl-5.42.0.drv" -> "bash-5.3p9.drv";
+  "perl-5.42.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "perl-5.42.0.drv" -> "source-stdenv.sh";
+  "perl-5.42.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "perl-5.42.0.drv" -> "default-builder.sh";
+  "perl-5.42.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "perl-5.42.0.drv" -> "stdenv-linux.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "stdenv-linux.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "curl-8.18.0.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "mirrors-list.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "static.patch.drv" -> "source-stdenv.sh";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "bash-5.3p3.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "builder.sh";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "bash-5.3p9.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.42-47.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "glibc-locales-2.42-47.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "integer-conversion-0.1.1.drv" -> "ghc-9.10.3.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "Setup.hs";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "unpretty-cabal-conf.awk";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "integer-conversion-0.1.1.drv" -> "haskell-generic-builder-test-w";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "integer-conversion-0.1.1.drv" -> "source-stdenv.sh";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "QuickCheck-2.15.0.1.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "QuickCheck-2.15.0.1.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "tasty-1.5.3.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "tasty-1.5.3.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "stdenv-linux.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "default-builder.sh";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "coreutils-9.9.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "remove-references-to.drv";
+  "integer-conversion-0.1.1.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "integer-conversion-0.1.1.drv" -> "hscolour-1.25.drv";
+  "file-5.45-binlore.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "file-5.45-binlore.drv" -> "stdenv-linux.drv";
+  "file-5.45-binlore.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "file-5.45-binlore.drv" -> "bash-5.3p3.drv";
+  "file-5.45-binlore.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "file-5.45-binlore.drv" -> "source-stdenv.sh";
+  "file-5.45-binlore.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "file-5.45-binlore.drv" -> "default-builder.sh";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-trove-classifiers-2" -> "ensure-newer-sources-hook.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python-remove-bin-bytecode-hoo";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python3-3.13.11.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "stdenv-linux.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "wrap-python-hook.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python-namespaces-hook.sh.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python-remove-tests-dir-hook.d";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python3.13-setuptools-80.9.0.d";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python-output-dist-hook.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "pypa-build-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "pypa-build-hook.sh.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-trove-classifiers-2" -> "source-stdenv.sh";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python-catch-conflicts-hook.dr" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python-catch-conflicts-hook.dr";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "pypa-install-hook.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "default-builder.sh";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "bash-5.3p3.drv";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python-runtime-deps-check-hook" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python-runtime-deps-check-hook";
+  "python3.13-trove-classifiers-2" [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-trove-classifiers-2" -> "python-imports-check-hook.sh.d";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "kf6-move-outputs-hook.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "kf6-move-outputs-hook.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "qtbase-6.10.1.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "qtbase-6.10.1.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "cmake-4.1.2.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "cmake-4.1.2.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "stdenv-linux.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "extra-cmake-modules-6.20.0.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "extra-cmake-modules-6.20.0.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "bash-5.3p3.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "wrap-qt6-apps-hook.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "wrap-qt6-apps-hook.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "kdegraphics-thumbnailers-25.08" -> "source-stdenv.sh";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "separate-debug-info.sh";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "ninja-1.13.1.drv";
+  "kdegraphics-thumbnailers-25.08" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "kdegraphics-thumbnailers-25.08" -> "default-builder.sh";
+  "mmap-0.5.9-doc" [fillcolor="#2c3e50"];
+  "ghc-9.10.3-doc" [fillcolor="#27ae60"];
+  "mmap-0.5.9-doc" -> "ghc-9.10.3-doc";
+  "CVE-2023-38470.patch.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "CVE-2023-38470.patch.drv" -> "stdenv-linux.drv";
+  "CVE-2023-38470.patch.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "CVE-2023-38470.patch.drv" -> "curl-8.18.0.drv";
+  "CVE-2023-38470.patch.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "CVE-2023-38470.patch.drv" -> "mirrors-list.drv";
+  "CVE-2023-38470.patch.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "CVE-2023-38470.patch.drv" -> "source-stdenv.sh";
+  "CVE-2023-38470.patch.drv" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.drv" [fillcolor="#2c3e50"];
+  "CVE-2023-38470.patch.drv" -> "patchutils-0.3.3.drv";
+  "CVE-2023-38470.patch.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "CVE-2023-38470.patch.drv" -> "bash-5.3p3.drv";
+  "CVE-2023-38470.patch.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "CVE-2023-38470.patch.drv" -> "builder.sh";
+  "fmlist-0.9.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "fmlist-0.9.4.tar.gz.drv" -> "bash-5.3p9.drv";
+  "fmlist-0.9.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "fmlist-0.9.4.tar.gz.drv" -> "curl-8.17.0.drv";
+  "fmlist-0.9.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "fmlist-0.9.4.tar.gz.drv" -> "stdenv-linux.drv";
+  "fmlist-0.9.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "fmlist-0.9.4.tar.gz.drv" -> "source-stdenv.sh";
+  "fmlist-0.9.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "fmlist-0.9.4.tar.gz.drv" -> "mirrors-list.drv";
+  "fmlist-0.9.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "fmlist-0.9.4.tar.gz.drv" -> "builder.sh";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "kf6-move-outputs-hook.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "kf6-move-outputs-hook.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "qtbase-6.10.1.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "qtbase-6.10.1.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "cmake-4.1.2.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "cmake-4.1.2.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "kcoreaddons-6.20.0.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "kcoreaddons-6.20.0.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "stdenv-linux.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "extra-cmake-modules-6.20.0.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "extra-cmake-modules-6.20.0.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "bash-5.3p3.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "wrap-qt6-apps-hook.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "wrap-qt6-apps-hook.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "ksshaskpass-6.5.5.drv" -> "source-stdenv.sh";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "separate-debug-info.sh";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "ninja-1.13.1.drv";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "default-builder.sh";
+  "ksshaskpass-6.5.5.drv" [fillcolor="#2c3e50"];
+  "ki18n-6.20.0.drv" [fillcolor="#2c3e50"];
+  "ksshaskpass-6.5.5.drv" -> "ki18n-6.20.0.drv";
+  "rust-bindgen-0.72.1.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "rust-bindgen-0.72.1.drv" -> "stdenv-linux.drv";
+  "rust-bindgen-0.72.1.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "rust-bindgen-0.72.1.drv" -> "bash-5.3p3.drv";
+  "rust-bindgen-0.72.1.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "rust-bindgen-0.72.1.drv" -> "source-stdenv.sh";
+  "rust-bindgen-0.72.1.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "rust-bindgen-0.72.1.drv" -> "default-builder.sh";
+  "rust-bindgen-0.72.1.drv" [fillcolor="#2c3e50"];
+  "bash-interactive-5.3p3.drv" [fillcolor="#2c3e50"];
+  "rust-bindgen-0.72.1.drv" -> "bash-interactive-5.3p3.drv";
+  "0001-src-eventloop.cpp-use-por" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "0001-src-eventloop.cpp-use-por" -> "mirrors-list.drv";
+  "0001-src-eventloop.cpp-use-por" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.drv" [fillcolor="#2c3e50"];
+  "0001-src-eventloop.cpp-use-por" -> "patchutils-0.3.3.drv";
+  "0001-src-eventloop.cpp-use-por" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "0001-src-eventloop.cpp-use-por" -> "stdenv-linux.drv";
+  "0001-src-eventloop.cpp-use-por" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "0001-src-eventloop.cpp-use-por" -> "bash-5.3p3.drv";
+  "0001-src-eventloop.cpp-use-por" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "0001-src-eventloop.cpp-use-por" -> "source-stdenv.sh";
+  "0001-src-eventloop.cpp-use-por" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "0001-src-eventloop.cpp-use-por" -> "curl-8.18.0.drv";
+  "0001-src-eventloop.cpp-use-por" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "0001-src-eventloop.cpp-use-por" -> "builder.sh";
+  "qtwebchannel-6.10.1" [fillcolor="#2c3e50"];
+  "gcc-14.3.0-lib" [fillcolor="#2c3e50"];
+  "qtwebchannel-6.10.1" -> "gcc-14.3.0-lib";
+  "qtwebchannel-6.10.1" [fillcolor="#2c3e50"];
+  "qtdeclarative-6.10.1" [fillcolor="#2c3e50"];
+  "qtwebchannel-6.10.1" -> "qtdeclarative-6.10.1";
+  "qtwebchannel-6.10.1" [fillcolor="#2c3e50"];
+  "qtbase-6.10.1" [fillcolor="#2c3e50"];
+  "qtwebchannel-6.10.1" -> "qtbase-6.10.1";
+  "qtwebchannel-6.10.1" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "qtwebchannel-6.10.1" -> "glibc-2.40-218";
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "bootstrap-tools.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" -> "bootstrap-tools.drv";
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" -> "source-stdenv.sh";
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" -> "separate-debug-info.sh";
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" -> "default-builder.sh";
+  "perl5.40.0-CGI-4.59.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "perl5.40.0-CGI-4.59.drv" -> "builder.sh";
+  "perl5.40.0-CGI-4.59.drv" [fillcolor="#2c3e50"];
+  "perl-5.40.0.drv" [fillcolor="#2c3e50"];
+  "perl5.40.0-CGI-4.59.drv" -> "perl-5.40.0.drv";
+  "perl5.40.0-CGI-4.59.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "perl5.40.0-CGI-4.59.drv" -> "stdenv-linux.drv";
+  "perl5.40.0-CGI-4.59.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "perl5.40.0-CGI-4.59.drv" -> "bash-5.3p3.drv";
+  "perl5.40.0-CGI-4.59.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "perl5.40.0-CGI-4.59.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p9.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.17.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "bash-5.3p9.drv";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.42-47.drv" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "glibc-locales-2.42-47.drv";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "constraints-0.14.2.drv" -> "ghc-9.10.3.drv";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "Setup.hs";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "unpretty-cabal-conf.awk";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "hspec-2.11.16.drv" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "hspec-2.11.16.drv";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "constraints-0.14.2.drv" -> "haskell-generic-builder-test-w";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "constraints-0.14.2.drv" -> "source-stdenv.sh";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "stdenv-linux.drv";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "default-builder.sh";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "coreutils-9.9.drv";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "remove-references-to.drv";
+  "constraints-0.14.2.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "constraints-0.14.2.drv" -> "hscolour-1.25.drv";
+  "polling-2.8.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "polling-2.8.0.drv" -> "stdenv-linux.drv";
+  "polling-2.8.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "polling-2.8.0.drv" -> "bash-5.3p3.drv";
+  "polling-2.8.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "polling-2.8.0.drv" -> "source-stdenv.sh";
+  "polling-2.8.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "polling-2.8.0.drv" -> "default-builder.sh";
+  "tasty-hunit-0.10.2-doc" [fillcolor="#2c3e50"];
+  "ghc-9.10.3-doc" [fillcolor="#27ae60"];
+  "tasty-hunit-0.10.2-doc" -> "ghc-9.10.3-doc";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "stdenv-linux.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "curl-8.18.0.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "mirrors-list.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "static.patch.drv" -> "source-stdenv.sh";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "patchutils-0.3.3.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "bash-5.3p3.drv";
+  "static.patch.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "static.patch.drv" -> "builder.sh";
+  "libtasn1-4.21.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.tar.gz.drv" -> "bash-5.3p9.drv";
+  "libtasn1-4.21.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.tar.gz.drv" -> "curl-8.17.0.drv";
+  "libtasn1-4.21.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.tar.gz.drv" -> "stdenv-linux.drv";
+  "libtasn1-4.21.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libtasn1-4.21.0.tar.gz.drv" -> "source-stdenv.sh";
+  "libtasn1-4.21.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.tar.gz.drv" -> "mirrors-list.drv";
+  "libtasn1-4.21.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.tar.gz.drv" -> "builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.17.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p9.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "bootstrap-tools.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" -> "bootstrap-tools.drv";
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "coreutils-9.9.drv" -> "source-stdenv.sh";
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" -> "separate-debug-info.sh";
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" -> "default-builder.sh";
+  "base-orphans-0.9.3-doc" [fillcolor="#2c3e50"];
+  "ghc-9.10.3-doc" [fillcolor="#27ae60"];
+  "base-orphans-0.9.3-doc" -> "ghc-9.10.3-doc";
+  "rubygems-3.7.2.tgz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "rubygems-3.7.2.tgz.drv" -> "mirrors-list.drv";
+  "rubygems-3.7.2.tgz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "rubygems-3.7.2.tgz.drv" -> "stdenv-linux.drv";
+  "rubygems-3.7.2.tgz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "rubygems-3.7.2.tgz.drv" -> "bash-5.3p3.drv";
+  "rubygems-3.7.2.tgz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "rubygems-3.7.2.tgz.drv" -> "source-stdenv.sh";
+  "rubygems-3.7.2.tgz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "rubygems-3.7.2.tgz.drv" -> "curl-8.18.0.drv";
+  "rubygems-3.7.2.tgz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "rubygems-3.7.2.tgz.drv" -> "builder.sh";
+  "user-units.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "user-units.drv" -> "stdenv-linux.drv";
+  "user-units.drv" [fillcolor="#2c3e50"];
+  "util-linux-2.41.3.drv" [fillcolor="#2c3e50"];
+  "user-units.drv" -> "util-linux-2.41.3.drv";
+  "user-units.drv" [fillcolor="#2c3e50"];
+  "systemd-258.3.drv" [fillcolor="#2c3e50"];
+  "user-units.drv" -> "systemd-258.3.drv";
+  "user-units.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "user-units.drv" -> "bash-5.3p3.drv";
+  "user-units.drv" [fillcolor="#2c3e50"];
+  "dbus-1.14.10.drv" [fillcolor="#2c3e50"];
+  "user-units.drv" -> "dbus-1.14.10.drv";
+  "user-units.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "user-units.drv" -> "source-stdenv.sh";
+  "user-units.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "user-units.drv" -> "default-builder.sh";
+  "python3-3.13.11-env" [fillcolor="#2c3e50"];
+  "gcc-14.3.0-lib" [fillcolor="#2c3e50"];
+  "python3-3.13.11-env" -> "gcc-14.3.0-lib";
+  "python3-3.13.11-env" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "python3-3.13.11-env" -> "glibc-2.40-218";
+  "graphite2-1.3.14.tgz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "graphite2-1.3.14.tgz.drv" -> "stdenv-linux.drv";
+  "graphite2-1.3.14.tgz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "graphite2-1.3.14.tgz.drv" -> "curl-8.18.0.drv";
+  "graphite2-1.3.14.tgz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "graphite2-1.3.14.tgz.drv" -> "mirrors-list.drv";
+  "graphite2-1.3.14.tgz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "graphite2-1.3.14.tgz.drv" -> "source-stdenv.sh";
+  "graphite2-1.3.14.tgz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "graphite2-1.3.14.tgz.drv" -> "bash-5.3p3.drv";
+  "graphite2-1.3.14.tgz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "graphite2-1.3.14.tgz.drv" -> "builder.sh";
+  "enummapset-0.7.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "enummapset-0.7.3.0.tar.gz.drv" -> "bash-5.3p9.drv";
+  "enummapset-0.7.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "enummapset-0.7.3.0.tar.gz.drv" -> "curl-8.17.0.drv";
+  "enummapset-0.7.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "enummapset-0.7.3.0.tar.gz.drv" -> "stdenv-linux.drv";
+  "enummapset-0.7.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "enummapset-0.7.3.0.tar.gz.drv" -> "source-stdenv.sh";
+  "enummapset-0.7.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "enummapset-0.7.3.0.tar.gz.drv" -> "mirrors-list.drv";
+  "enummapset-0.7.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "enummapset-0.7.3.0.tar.gz.drv" -> "builder.sh";
+  "libdeflate-1.25" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "libdeflate-1.25" -> "glibc-2.40-218";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.17.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p9.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "HTTP-4000.4.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "HTTP-4000.4.1.tar.gz.drv" -> "mirrors-list.drv";
+  "HTTP-4000.4.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "HTTP-4000.4.1.tar.gz.drv" -> "stdenv-linux.drv";
+  "HTTP-4000.4.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "HTTP-4000.4.1.tar.gz.drv" -> "bash-5.3p3.drv";
+  "HTTP-4000.4.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "HTTP-4000.4.1.tar.gz.drv" -> "source-stdenv.sh";
+  "HTTP-4000.4.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "HTTP-4000.4.1.tar.gz.drv" -> "curl-8.18.0.drv";
+  "HTTP-4000.4.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "HTTP-4000.4.1.tar.gz.drv" -> "builder.sh";
+  "http-conduit-2.3.9.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "http-conduit-2.3.9.1.tar.gz.dr" -> "bash-5.3p9.drv";
+  "http-conduit-2.3.9.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "http-conduit-2.3.9.1.tar.gz.dr" -> "curl-8.17.0.drv";
+  "http-conduit-2.3.9.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "http-conduit-2.3.9.1.tar.gz.dr" -> "stdenv-linux.drv";
+  "http-conduit-2.3.9.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "http-conduit-2.3.9.1.tar.gz.dr" -> "source-stdenv.sh";
+  "http-conduit-2.3.9.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "http-conduit-2.3.9.1.tar.gz.dr" -> "mirrors-list.drv";
+  "http-conduit-2.3.9.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "http-conduit-2.3.9.1.tar.gz.dr" -> "builder.sh";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "bash-5.3p9.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.42-47.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "glibc-locales-2.42-47.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "text-iso8601-0.1.1.drv" -> "ghc-9.10.3.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "Setup.hs";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "unpretty-cabal-conf.awk";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "text-iso8601-0.1.1.drv" -> "haskell-generic-builder-test-w";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "text-iso8601-0.1.1.drv" -> "source-stdenv.sh";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "QuickCheck-2.15.0.1.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "QuickCheck-2.15.0.1.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "tasty-1.5.3.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "tasty-1.5.3.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "stdenv-linux.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "default-builder.sh";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "coreutils-9.9.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "remove-references-to.drv";
+  "text-iso8601-0.1.1.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "text-iso8601-0.1.1.drv" -> "hscolour-1.25.drv";
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "utils.bash" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" -> "utils.bash";
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" -> "stdenv-linux.drv";
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "pkg-config-wrapper-0.29.2.drv" -> "source-stdenv.sh";
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" -> "default-builder.sh";
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" -> "bash-5.3p3.drv";
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "role.bash" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" -> "role.bash";
+  "llvm-21.1.7.drv" [fillcolor="#2c3e50"];
+  "cmake-4.1.2.drv" [fillcolor="#2c3e50"];
+  "llvm-21.1.7.drv" -> "cmake-4.1.2.drv";
+  "llvm-21.1.7.drv" [fillcolor="#2c3e50"];
+  "zlib-1.3.1.drv" [fillcolor="#2c3e50"];
+  "llvm-21.1.7.drv" -> "zlib-1.3.1.drv";
+  "llvm-21.1.7.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "llvm-21.1.7.drv" -> "stdenv-linux.drv";
+  "llvm-21.1.7.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "llvm-21.1.7.drv" -> "bash-5.3p3.drv";
+  "llvm-21.1.7.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "llvm-21.1.7.drv" -> "source-stdenv.sh";
+  "llvm-21.1.7.drv" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "llvm-21.1.7.drv" -> "ninja-1.13.1.drv";
+  "llvm-21.1.7.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "llvm-21.1.7.drv" -> "default-builder.sh";
+  "ruby3.3-treetop-1.6.18.drv" [fillcolor="#2c3e50"];
+  "make-shell-wrapper-hook.drv" [fillcolor="#2c3e50"];
+  "ruby3.3-treetop-1.6.18.drv" -> "make-shell-wrapper-hook.drv";
+  "ruby3.3-treetop-1.6.18.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "ruby3.3-treetop-1.6.18.drv" -> "stdenv-linux.drv";
+  "ruby3.3-treetop-1.6.18.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "ruby3.3-treetop-1.6.18.drv" -> "bash-5.3p3.drv";
+  "ruby3.3-treetop-1.6.18.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "ruby3.3-treetop-1.6.18.drv" -> "source-stdenv.sh";
+  "ruby3.3-treetop-1.6.18.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "ruby3.3-treetop-1.6.18.drv" -> "default-builder.sh";
+  "bash53-006.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "bash53-006.drv" -> "bash-5.3p9.drv";
+  "bash53-006.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "bash53-006.drv" -> "curl-8.17.0.drv";
+  "bash53-006.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "bash53-006.drv" -> "stdenv-linux.drv";
+  "bash53-006.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "bash53-006.drv" -> "source-stdenv.sh";
+  "bash53-006.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "bash53-006.drv" -> "mirrors-list.drv";
+  "bash53-006.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "bash53-006.drv" -> "builder.sh";
+  "setuptools_scm-9.0.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "setuptools_scm-9.0.1.tar.gz.dr" -> "stdenv-linux.drv";
+  "setuptools_scm-9.0.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "setuptools_scm-9.0.1.tar.gz.dr" -> "curl-8.17.0.drv";
+  "setuptools_scm-9.0.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "setuptools_scm-9.0.1.tar.gz.dr" -> "bash-5.3p9.drv";
+  "setuptools_scm-9.0.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "setuptools_scm-9.0.1.tar.gz.dr" -> "source-stdenv.sh";
+  "setuptools_scm-9.0.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "setuptools_scm-9.0.1.tar.gz.dr" -> "mirrors-list.drv";
+  "setuptools_scm-9.0.1.tar.gz.dr" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "setuptools_scm-9.0.1.tar.gz.dr" -> "builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p9.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.17.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "ghc-9.10.3.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "Setup.hs";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "haskell-generic-builder-test-w";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "glibc-locales-2.40-218.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "glibc-locales-2.40-218.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "unpretty-cabal-conf.awk";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "remove-references-to.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "stdenv-linux.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "bash-5.3p3.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "hscolour-1.25.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "source-stdenv.sh";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "tasty-1.5.3.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "tasty-1.5.3.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "tasty-hunit-0.10.2.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "tasty-hunit-0.10.2.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "coreutils-9.8.drv" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "coreutils-9.8.drv";
+  "wl-pprint-annotated-0.1.0.1.dr" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "wl-pprint-annotated-0.1.0.1.dr" -> "default-builder.sh";
+  "Only-0.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "Only-0.1.tar.gz.drv" -> "mirrors-list.drv";
+  "Only-0.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "Only-0.1.tar.gz.drv" -> "stdenv-linux.drv";
+  "Only-0.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "Only-0.1.tar.gz.drv" -> "bash-5.3p3.drv";
+  "Only-0.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "Only-0.1.tar.gz.drv" -> "source-stdenv.sh";
+  "Only-0.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "Only-0.1.tar.gz.drv" -> "curl-8.18.0.drv";
+  "Only-0.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "Only-0.1.tar.gz.drv" -> "builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p9.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.17.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "gnu-config-2024-01-01.drv" [fillcolor="#2c3e50"];
+  "bootstrap-tools.drv" [fillcolor="#2c3e50"];
+  "gnu-config-2024-01-01.drv" -> "bootstrap-tools.drv";
+  "gnu-config-2024-01-01.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "gnu-config-2024-01-01.drv" -> "source-stdenv.sh";
+  "gnu-config-2024-01-01.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "gnu-config-2024-01-01.drv" -> "default-builder.sh";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "glib-2.86.3.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "systemd-258.3.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "systemd-258.3.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "meson-1.9.1.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "meson-1.9.1.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "stdenv-linux.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "bash-5.3p3.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "flatpak-1.16.2.drv" -> "source-stdenv.sh";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "pkg-config-wrapper-0.29.2.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "python3-3.13.11.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.8.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "coreutils-9.8.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "libxslt-1.1.45.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "libxslt-1.1.45.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "separate-debug-info.sh";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "ninja-1.13.1.drv";
+  "flatpak-1.16.2.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "flatpak-1.16.2.drv" -> "default-builder.sh";
+  "libtasn1-4.21.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.drv" -> "bash-5.3p9.drv";
+  "libtasn1-4.21.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libtasn1-4.21.0.drv" -> "source-stdenv.sh";
+  "libtasn1-4.21.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.drv" -> "default-builder.sh";
+  "libtasn1-4.21.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libtasn1-4.21.0.drv" -> "stdenv-linux.drv";
+  "python3.13-bootstrap-packaging" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-bootstrap-packaging" -> "python3-3.13.11.drv";
+  "python3.13-bootstrap-packaging" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "python3.13-bootstrap-packaging" -> "bash-5.3p9.drv";
+  "python3.13-bootstrap-packaging" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-bootstrap-packaging" -> "source-stdenv.sh";
+  "python3.13-bootstrap-packaging" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-bootstrap-packaging" -> "default-builder.sh";
+  "python3.13-bootstrap-packaging" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-bootstrap-packaging" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.18.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "libnftnl-1.3.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libnftnl-1.3.0.tar.xz.drv" -> "stdenv-linux.drv";
+  "libnftnl-1.3.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "libnftnl-1.3.0.tar.xz.drv" -> "curl-8.18.0.drv";
+  "libnftnl-1.3.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "libnftnl-1.3.0.tar.xz.drv" -> "mirrors-list.drv";
+  "libnftnl-1.3.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libnftnl-1.3.0.tar.xz.drv" -> "source-stdenv.sh";
+  "libnftnl-1.3.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "libnftnl-1.3.0.tar.xz.drv" -> "bash-5.3p3.drv";
+  "libnftnl-1.3.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "libnftnl-1.3.0.tar.xz.drv" -> "builder.sh";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "glibc-2.40-218-dev" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "glibc-2.40-218-dev";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "ncurses-6.5" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "ncurses-6.5";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "gmp-with-cxx-6.3.0" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "gmp-with-cxx-6.3.0";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "numactl-2.0.18" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "numactl-2.0.18";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "libffi-3.5.2" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "libffi-3.5.2";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "elfutils-0.194" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "elfutils-0.194";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "ghc-9.10.3" [fillcolor="#27ae60"];
+  "streaming-commons-0.2.3.1" -> "ghc-9.10.3";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "glibc-2.40-218";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "zlib-1.3.1" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "zlib-1.3.1";
+  "streaming-commons-0.2.3.1" [fillcolor="#2c3e50"];
+  "hashable-1.5.0.0" [fillcolor="#2c3e50"];
+  "streaming-commons-0.2.3.1" -> "hashable-1.5.0.0";
+  "nsncd-1.5.2-vendor-staging.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "nsncd-1.5.2-vendor-staging.drv" -> "stdenv-linux.drv";
+  "nsncd-1.5.2-vendor-staging.drv" [fillcolor="#2c3e50"];
+  "nss-cacert-3.117.drv" [fillcolor="#2c3e50"];
+  "nsncd-1.5.2-vendor-staging.drv" -> "nss-cacert-3.117.drv";
+  "nsncd-1.5.2-vendor-staging.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "nsncd-1.5.2-vendor-staging.drv" -> "bash-5.3p3.drv";
+  "nsncd-1.5.2-vendor-staging.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "nsncd-1.5.2-vendor-staging.drv" -> "source-stdenv.sh";
+  "nsncd-1.5.2-vendor-staging.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "nsncd-1.5.2-vendor-staging.drv" -> "default-builder.sh";
+  "base64-bytestring-1.2.1.0-doc" [fillcolor="#2c3e50"];
+  "ghc-9.10.3-doc" [fillcolor="#27ae60"];
+  "base64-bytestring-1.2.1.0-doc" -> "ghc-9.10.3-doc";
+  "python2.7-setuptools-44.0.0.dr" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python2.7-setuptools-44.0.0.dr" -> "python-remove-bin-bytecode-hoo";
+  "python2.7-setuptools-44.0.0.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python2.7-setuptools-44.0.0.dr" -> "stdenv-linux.drv";
+  "python2.7-setuptools-44.0.0.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "python2.7-setuptools-44.0.0.dr" -> "bash-5.3p3.drv";
+  "python2.7-setuptools-44.0.0.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python2.7-setuptools-44.0.0.dr" -> "source-stdenv.sh";
+  "python2.7-setuptools-44.0.0.dr" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python2.7-setuptools-44.0.0.dr" -> "default-builder.sh";
+  "python2.7-setuptools-44.0.0.dr" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python2.7-setuptools-44.0.0.dr" -> "ensure-newer-sources-hook.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "python-remove-bin-bytecode-hoo";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "python-imports-check-hook.sh.d";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-setuptools-80.9.0.d" -> "ensure-newer-sources-hook.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "python-output-dist-hook.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "python3-3.13.11.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "pypa-install-hook.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "bash-5.3p9.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "wrap-python-hook.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-setuptools-80.9.0.d" -> "source-stdenv.sh";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "default-builder.sh";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "python-remove-tests-dir-hook.d";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "stdenv-linux.drv";
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" -> "python-namespaces-hook.sh.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p9.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.17.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "bash-5.3p9.drv";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.42-47.drv" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "glibc-locales-2.42-47.drv";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "selective-0.7.0.1.drv" -> "ghc-9.10.3.drv";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "Setup.hs";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "unpretty-cabal-conf.awk";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "selective-0.7.0.1.drv" -> "haskell-generic-builder-test-w";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "selective-0.7.0.1.drv" -> "source-stdenv.sh";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "QuickCheck-2.15.0.1.drv" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "QuickCheck-2.15.0.1.drv";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "stdenv-linux.drv";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "default-builder.sh";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "coreutils-9.9.drv";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "remove-references-to.drv";
+  "selective-0.7.0.1.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "selective-0.7.0.1.drv" -> "hscolour-1.25.drv";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "gmp-with-cxx-6.3.0" [fillcolor="#2c3e50"];
+  "primitive-extras-0.10.2.2" -> "gmp-with-cxx-6.3.0";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "ghc-9.10.3" [fillcolor="#27ae60"];
+  "primitive-extras-0.10.2.2" -> "ghc-9.10.3";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "numactl-2.0.18" [fillcolor="#2c3e50"];
+  "primitive-extras-0.10.2.2" -> "numactl-2.0.18";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "hashable-1.5.0.0" [fillcolor="#2c3e50"];
+  "primitive-extras-0.10.2.2" -> "hashable-1.5.0.0";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "libffi-3.5.2" [fillcolor="#2c3e50"];
+  "primitive-extras-0.10.2.2" -> "libffi-3.5.2";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "glibc-2.42-47" [fillcolor="#2c3e50"];
+  "primitive-extras-0.10.2.2" -> "glibc-2.42-47";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "elfutils-0.194" [fillcolor="#2c3e50"];
+  "primitive-extras-0.10.2.2" -> "elfutils-0.194";
+  "primitive-extras-0.10.2.2" [fillcolor="#2c3e50"];
+  "ncurses-6.6" [fillcolor="#2c3e50"];
+  "primitive-extras-0.10.2.2" -> "ncurses-6.6";
+  "musl.patch.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "musl.patch.drv" -> "stdenv-linux.drv";
+  "musl.patch.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "musl.patch.drv" -> "curl-8.17.0.drv";
+  "musl.patch.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "musl.patch.drv" -> "bash-5.3p9.drv";
+  "musl.patch.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "musl.patch.drv" -> "source-stdenv.sh";
+  "musl.patch.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "musl.patch.drv" -> "mirrors-list.drv";
+  "musl.patch.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "musl.patch.drv" -> "builder.sh";
+  "busybox-1.36.1" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "busybox-1.36.1" -> "glibc-2.40-218";
+  "gnome-desktop-44.4" [fillcolor="#2c3e50"];
+  "systemd-258.3" [fillcolor="#2c3e50"];
+  "gnome-desktop-44.4" -> "systemd-258.3";
+  "gnome-desktop-44.4" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "gnome-desktop-44.4" -> "glibc-2.40-218";
+  "gnome-desktop-44.4" [fillcolor="#2c3e50"];
+  "glib-2.86.3" [fillcolor="#2c3e50"];
+  "gnome-desktop-44.4" -> "glib-2.86.3";
+  "sratom-0.6.20.tar.xz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "sratom-0.6.20.tar.xz.drv" -> "stdenv-linux.drv";
+  "sratom-0.6.20.tar.xz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "sratom-0.6.20.tar.xz.drv" -> "curl-8.18.0.drv";
+  "sratom-0.6.20.tar.xz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "sratom-0.6.20.tar.xz.drv" -> "mirrors-list.drv";
+  "sratom-0.6.20.tar.xz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "sratom-0.6.20.tar.xz.drv" -> "source-stdenv.sh";
+  "sratom-0.6.20.tar.xz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "sratom-0.6.20.tar.xz.drv" -> "bash-5.3p3.drv";
+  "sratom-0.6.20.tar.xz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "sratom-0.6.20.tar.xz.drv" -> "builder.sh";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" -> "python3-3.13.11.drv";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" -> "bash-5.3p9.drv";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" -> "pkg-config-wrapper-0.29.2.drv";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" -> "wrap-python-hook.drv";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "glib-2.86.3.drv" -> "source-stdenv.sh";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "separate-debug-info.sh" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" -> "separate-debug-info.sh";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" -> "default-builder.sh";
+  "glib-2.86.3.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "glib-2.86.3.drv" -> "stdenv-linux.drv";
+  "libXfont2-2.0.7.tar.xz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "libXfont2-2.0.7.tar.xz.drv" -> "mirrors-list.drv";
+  "libXfont2-2.0.7.tar.xz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "libXfont2-2.0.7.tar.xz.drv" -> "stdenv-linux.drv";
+  "libXfont2-2.0.7.tar.xz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "libXfont2-2.0.7.tar.xz.drv" -> "bash-5.3p3.drv";
+  "libXfont2-2.0.7.tar.xz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "libXfont2-2.0.7.tar.xz.drv" -> "source-stdenv.sh";
+  "libXfont2-2.0.7.tar.xz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "libXfont2-2.0.7.tar.xz.drv" -> "curl-8.18.0.drv";
+  "libXfont2-2.0.7.tar.xz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "libXfont2-2.0.7.tar.xz.drv" -> "builder.sh";
+  "types_psutil-7.0.0.20250822.ta" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "types_psutil-7.0.0.20250822.ta" -> "bash-5.3p9.drv";
+  "types_psutil-7.0.0.20250822.ta" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "types_psutil-7.0.0.20250822.ta" -> "curl-8.17.0.drv";
+  "types_psutil-7.0.0.20250822.ta" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "types_psutil-7.0.0.20250822.ta" -> "stdenv-linux.drv";
+  "types_psutil-7.0.0.20250822.ta" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "types_psutil-7.0.0.20250822.ta" -> "source-stdenv.sh";
+  "types_psutil-7.0.0.20250822.ta" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "types_psutil-7.0.0.20250822.ta" -> "mirrors-list.drv";
+  "types_psutil-7.0.0.20250822.ta" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "types_psutil-7.0.0.20250822.ta" -> "builder.sh";
+  "webrtc-audio-processing-1.3.dr" [fillcolor="#2c3e50"];
+  "meson-1.9.1.drv" [fillcolor="#2c3e50"];
+  "webrtc-audio-processing-1.3.dr" -> "meson-1.9.1.drv";
+  "webrtc-audio-processing-1.3.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "webrtc-audio-processing-1.3.dr" -> "stdenv-linux.drv";
+  "webrtc-audio-processing-1.3.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "webrtc-audio-processing-1.3.dr" -> "bash-5.3p3.drv";
+  "webrtc-audio-processing-1.3.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "webrtc-audio-processing-1.3.dr" -> "source-stdenv.sh";
+  "webrtc-audio-processing-1.3.dr" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "webrtc-audio-processing-1.3.dr" -> "pkg-config-wrapper-0.29.2.drv";
+  "webrtc-audio-processing-1.3.dr" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "webrtc-audio-processing-1.3.dr" -> "ninja-1.13.1.drv";
+  "webrtc-audio-processing-1.3.dr" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "webrtc-audio-processing-1.3.dr" -> "default-builder.sh";
+  "gevent-25.5.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "gevent-25.5.1.tar.gz.drv" -> "stdenv-linux.drv";
+  "gevent-25.5.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "gevent-25.5.1.tar.gz.drv" -> "curl-8.18.0.drv";
+  "gevent-25.5.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "gevent-25.5.1.tar.gz.drv" -> "mirrors-list.drv";
+  "gevent-25.5.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "gevent-25.5.1.tar.gz.drv" -> "source-stdenv.sh";
+  "gevent-25.5.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "gevent-25.5.1.tar.gz.drv" -> "bash-5.3p3.drv";
+  "gevent-25.5.1.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "gevent-25.5.1.tar.gz.drv" -> "builder.sh";
+  "gcc-15.patch.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "gcc-15.patch.drv" -> "stdenv-linux.drv";
+  "gcc-15.patch.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "gcc-15.patch.drv" -> "curl-8.17.0.drv";
+  "gcc-15.patch.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "gcc-15.patch.drv" -> "bash-5.3p9.drv";
+  "gcc-15.patch.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "gcc-15.patch.drv" -> "source-stdenv.sh";
+  "gcc-15.patch.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "gcc-15.patch.drv" -> "mirrors-list.drv";
+  "gcc-15.patch.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "gcc-15.patch.drv" -> "builder.sh";
+  "python-setup-hook.sh.drv" [fillcolor="#2c3e50"];
+  "bootstrap-tools.drv" [fillcolor="#2c3e50"];
+  "python-setup-hook.sh.drv" -> "bootstrap-tools.drv";
+  "python-setup-hook.sh.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python-setup-hook.sh.drv" -> "source-stdenv.sh";
+  "python-setup-hook.sh.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python-setup-hook.sh.drv" -> "default-builder.sh";
+  "kxmlgui-6.20.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "kxmlgui-6.20.0.tar.xz.drv" -> "mirrors-list.drv";
+  "kxmlgui-6.20.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "kxmlgui-6.20.0.tar.xz.drv" -> "stdenv-linux.drv";
+  "kxmlgui-6.20.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "kxmlgui-6.20.0.tar.xz.drv" -> "bash-5.3p3.drv";
+  "kxmlgui-6.20.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "kxmlgui-6.20.0.tar.xz.drv" -> "source-stdenv.sh";
+  "kxmlgui-6.20.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "kxmlgui-6.20.0.tar.xz.drv" -> "curl-8.18.0.drv";
+  "kxmlgui-6.20.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "kxmlgui-6.20.0.tar.xz.drv" -> "builder.sh";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "glibc-2.40-218-dev" [fillcolor="#2c3e50"];
+  "unliftio-core-0.2.1.0" -> "glibc-2.40-218-dev";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "ncurses-6.5" [fillcolor="#2c3e50"];
+  "unliftio-core-0.2.1.0" -> "ncurses-6.5";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "gmp-with-cxx-6.3.0" [fillcolor="#2c3e50"];
+  "unliftio-core-0.2.1.0" -> "gmp-with-cxx-6.3.0";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "numactl-2.0.18" [fillcolor="#2c3e50"];
+  "unliftio-core-0.2.1.0" -> "numactl-2.0.18";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "libffi-3.5.2" [fillcolor="#2c3e50"];
+  "unliftio-core-0.2.1.0" -> "libffi-3.5.2";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "elfutils-0.194" [fillcolor="#2c3e50"];
+  "unliftio-core-0.2.1.0" -> "elfutils-0.194";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "ghc-9.10.3" [fillcolor="#27ae60"];
+  "unliftio-core-0.2.1.0" -> "ghc-9.10.3";
+  "unliftio-core-0.2.1.0" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "unliftio-core-0.2.1.0" -> "glibc-2.40-218";
+  "rerebase-1.21.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "rerebase-1.21.2.tar.gz.drv" -> "mirrors-list.drv";
+  "rerebase-1.21.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "rerebase-1.21.2.tar.gz.drv" -> "stdenv-linux.drv";
+  "rerebase-1.21.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "rerebase-1.21.2.tar.gz.drv" -> "bash-5.3p3.drv";
+  "rerebase-1.21.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "rerebase-1.21.2.tar.gz.drv" -> "source-stdenv.sh";
+  "rerebase-1.21.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "rerebase-1.21.2.tar.gz.drv" -> "curl-8.18.0.drv";
+  "rerebase-1.21.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "rerebase-1.21.2.tar.gz.drv" -> "builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.18.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "unbounded-delays-0.1.1.1.drv" -> "ghc-9.10.3.drv";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "Setup.hs";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "unbounded-delays-0.1.1.1.drv" -> "haskell-generic-builder-test-w";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.40-218.drv" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "glibc-locales-2.40-218.drv";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "unpretty-cabal-conf.awk";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "remove-references-to.drv";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "stdenv-linux.drv";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "bash-5.3p3.drv";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "hscolour-1.25.drv";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "unbounded-delays-0.1.1.1.drv" -> "source-stdenv.sh";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.8.drv" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "coreutils-9.8.drv";
+  "unbounded-delays-0.1.1.1.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "unbounded-delays-0.1.1.1.drv" -> "default-builder.sh";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "quickcheck-instances-0.3.33.dr" -> "ghc-9.10.3.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "Setup.hs";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "quickcheck-instances-0.3.33.dr" -> "haskell-generic-builder-test-w";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "glibc-locales-2.40-218.drv" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "glibc-locales-2.40-218.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "unpretty-cabal-conf.awk";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "remove-references-to.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "stdenv-linux.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "QuickCheck-2.15.0.1.drv" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "QuickCheck-2.15.0.1.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "bash-5.3p3.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "hscolour-1.25.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "quickcheck-instances-0.3.33.dr" -> "source-stdenv.sh";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "coreutils-9.8.drv" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "coreutils-9.8.drv";
+  "quickcheck-instances-0.3.33.dr" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "quickcheck-instances-0.3.33.dr" -> "default-builder.sh";
+  "fastrand-1.9.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "fastrand-1.9.0.drv" -> "stdenv-linux.drv";
+  "fastrand-1.9.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "fastrand-1.9.0.drv" -> "bash-5.3p3.drv";
+  "fastrand-1.9.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "fastrand-1.9.0.drv" -> "source-stdenv.sh";
+  "fastrand-1.9.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "fastrand-1.9.0.drv" -> "default-builder.sh";
+  "colourista-0.1.0.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "colourista-0.1.0.2.tar.gz.drv" -> "bash-5.3p9.drv";
+  "colourista-0.1.0.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "colourista-0.1.0.2.tar.gz.drv" -> "curl-8.17.0.drv";
+  "colourista-0.1.0.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "colourista-0.1.0.2.tar.gz.drv" -> "stdenv-linux.drv";
+  "colourista-0.1.0.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "colourista-0.1.0.2.tar.gz.drv" -> "source-stdenv.sh";
+  "colourista-0.1.0.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "colourista-0.1.0.2.tar.gz.drv" -> "mirrors-list.drv";
+  "colourista-0.1.0.2.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "colourista-0.1.0.2.tar.gz.drv" -> "builder.sh";
+  "wildmidi.cfg.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "wildmidi.cfg.drv" -> "stdenv-linux.drv";
+  "wildmidi.cfg.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "wildmidi.cfg.drv" -> "bash-5.3p3.drv";
+  "wildmidi.cfg.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "wildmidi.cfg.drv" -> "source-stdenv.sh";
+  "wildmidi.cfg.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "wildmidi.cfg.drv" -> "default-builder.sh";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "bash-5.3p9.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.42-47.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "glibc-locales-2.42-47.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "http-types-0.12.4.drv" -> "ghc-9.10.3.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "Setup.hs";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "unpretty-cabal-conf.awk";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "hspec-2.11.16.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "hspec-2.11.16.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "http-types-0.12.4.drv" -> "haskell-generic-builder-test-w";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "http-types-0.12.4.drv" -> "source-stdenv.sh";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "QuickCheck-2.15.0.1.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "QuickCheck-2.15.0.1.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "stdenv-linux.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "default-builder.sh";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "coreutils-9.9.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "remove-references-to.drv";
+  "http-types-0.12.4.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "http-types-0.12.4.drv" -> "hscolour-1.25.drv";
+  "perl5.40.0-TimeDate-2.33.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "perl5.40.0-TimeDate-2.33.drv" -> "builder.sh";
+  "perl5.40.0-TimeDate-2.33.drv" [fillcolor="#2c3e50"];
+  "perl-5.40.0.drv" [fillcolor="#2c3e50"];
+  "perl5.40.0-TimeDate-2.33.drv" -> "perl-5.40.0.drv";
+  "perl5.40.0-TimeDate-2.33.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "perl5.40.0-TimeDate-2.33.drv" -> "stdenv-linux.drv";
+  "perl5.40.0-TimeDate-2.33.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "perl5.40.0-TimeDate-2.33.drv" -> "bash-5.3p3.drv";
+  "perl5.40.0-TimeDate-2.33.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "perl5.40.0-TimeDate-2.33.drv" -> "source-stdenv.sh";
+  "regex-automata-0.4.6.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "regex-automata-0.4.6.drv" -> "stdenv-linux.drv";
+  "regex-automata-0.4.6.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "regex-automata-0.4.6.drv" -> "source-stdenv.sh";
+  "regex-automata-0.4.6.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "regex-automata-0.4.6.drv" -> "default-builder.sh";
+  "regex-automata-0.4.6.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "regex-automata-0.4.6.drv" -> "bash-5.3p3.drv";
+  "dconf-0.49.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "dconf-0.49.0.tar.xz.drv" -> "stdenv-linux.drv";
+  "dconf-0.49.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "dconf-0.49.0.tar.xz.drv" -> "curl-8.18.0.drv";
+  "dconf-0.49.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "dconf-0.49.0.tar.xz.drv" -> "mirrors-list.drv";
+  "dconf-0.49.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "dconf-0.49.0.tar.xz.drv" -> "source-stdenv.sh";
+  "dconf-0.49.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "dconf-0.49.0.tar.xz.drv" -> "bash-5.3p3.drv";
+  "dconf-0.49.0.tar.xz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "dconf-0.49.0.tar.xz.drv" -> "builder.sh";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "hspec-2.11.14.drv" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "hspec-2.11.14.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "hspec-api-2.11.14.drv" -> "ghc-9.10.3.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "Setup.hs";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "hspec-api-2.11.14.drv" -> "haskell-generic-builder-test-w";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.40-218.drv" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "glibc-locales-2.40-218.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "unpretty-cabal-conf.awk";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "remove-references-to.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "stdenv-linux.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "bash-5.3p3.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "hscolour-1.25.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "hspec-api-2.11.14.drv" -> "source-stdenv.sh";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.8.drv" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "coreutils-9.8.drv";
+  "hspec-api-2.11.14.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "hspec-api-2.11.14.drv" -> "default-builder.sh";
+  "crate-serde_json-1.0.122.tar.g" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "crate-serde_json-1.0.122.tar.g" -> "mirrors-list.drv";
+  "crate-serde_json-1.0.122.tar.g" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "crate-serde_json-1.0.122.tar.g" -> "stdenv-linux.drv";
+  "crate-serde_json-1.0.122.tar.g" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "crate-serde_json-1.0.122.tar.g" -> "bash-5.3p3.drv";
+  "crate-serde_json-1.0.122.tar.g" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "crate-serde_json-1.0.122.tar.g" -> "source-stdenv.sh";
+  "crate-serde_json-1.0.122.tar.g" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "crate-serde_json-1.0.122.tar.g" -> "curl-8.18.0.drv";
+  "crate-serde_json-1.0.122.tar.g" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "crate-serde_json-1.0.122.tar.g" -> "builder.sh";
+  "gnu-config-2024-01-01.drv" [fillcolor="#2c3e50"];
+  "bootstrap-tools.drv" [fillcolor="#2c3e50"];
+  "gnu-config-2024-01-01.drv" -> "bootstrap-tools.drv";
+  "gnu-config-2024-01-01.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "gnu-config-2024-01-01.drv" -> "source-stdenv.sh";
+  "gnu-config-2024-01-01.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "gnu-config-2024-01-01.drv" -> "default-builder.sh";
+  "?id=55f655ffb7ef03bdd1df0f0137" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "?id=55f655ffb7ef03bdd1df0f0137" -> "stdenv-linux.drv";
+  "?id=55f655ffb7ef03bdd1df0f0137" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "?id=55f655ffb7ef03bdd1df0f0137" -> "curl-8.18.0.drv";
+  "?id=55f655ffb7ef03bdd1df0f0137" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "?id=55f655ffb7ef03bdd1df0f0137" -> "mirrors-list.drv";
+  "?id=55f655ffb7ef03bdd1df0f0137" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "?id=55f655ffb7ef03bdd1df0f0137" -> "source-stdenv.sh";
+  "?id=55f655ffb7ef03bdd1df0f0137" [fillcolor="#2c3e50"];
+  "patchutils-0.3.3.drv" [fillcolor="#2c3e50"];
+  "?id=55f655ffb7ef03bdd1df0f0137" -> "patchutils-0.3.3.drv";
+  "?id=55f655ffb7ef03bdd1df0f0137" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "?id=55f655ffb7ef03bdd1df0f0137" -> "bash-5.3p3.drv";
+  "?id=55f655ffb7ef03bdd1df0f0137" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "?id=55f655ffb7ef03bdd1df0f0137" -> "builder.sh";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "python-remove-bin-bytecode-hoo";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "python-imports-check-hook.sh.d";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "python-namespaces-hook.sh.drv";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "wrap-python-hook.drv";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "stdenv-linux.drv";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "bash-5.3p3.drv";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "pypa-install-hook.drv";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "python-remove-tests-dir-hook.d";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-build-1.3.0.drv" -> "source-stdenv.sh";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "python-output-dist-hook.drv";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "python3-3.13.11.drv";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-build-1.3.0.drv" -> "default-builder.sh";
+  "python3.13-build-1.3.0.drv" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-build-1.3.0.drv" -> "ensure-newer-sources-hook.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "bash-5.3p9.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "glibc-locales-2.42-47.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "glibc-locales-2.42-47.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "ghc-9.10.3.drv" [fillcolor="#27ae60"];
+  "bifunctors-5.6.2.drv" -> "ghc-9.10.3.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "Setup.hs" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "Setup.hs";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "unpretty-cabal-conf.awk" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "unpretty-cabal-conf.awk";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "hspec-2.11.16.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "hspec-2.11.16.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "haskell-generic-builder-test-w" [fillcolor="#2ecc71"];
+  "bifunctors-5.6.2.drv" -> "haskell-generic-builder-test-w";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "bifunctors-5.6.2.drv" -> "source-stdenv.sh";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "QuickCheck-2.15.0.1.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "QuickCheck-2.15.0.1.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "stdenv-linux.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "default-builder.sh";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "coreutils-9.9.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "coreutils-9.9.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "remove-references-to.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "remove-references-to.drv";
+  "bifunctors-5.6.2.drv" [fillcolor="#2c3e50"];
+  "hscolour-1.25.drv" [fillcolor="#2c3e50"];
+  "bifunctors-5.6.2.drv" -> "hscolour-1.25.drv";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "gcc-14.3.0-lib" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "gcc-14.3.0-lib";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "systemd-258.3" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "systemd-258.3";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "qtwayland-6.10.1-only-plugins-" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "qtwayland-6.10.1-only-plugins-";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "qtbase-6.10.1-only-plugins-qml" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "qtbase-6.10.1-only-plugins-qml";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "qtdeclarative-6.10.1" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "qtdeclarative-6.10.1";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "qtbase-6.10.1" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "qtbase-6.10.1";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "kservice-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "kservice-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "libglvnd-1.7.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "libglvnd-1.7.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "cups-2.4.16" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "cups-2.4.16";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "kcolorscheme-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "kcolorscheme-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "kwidgetsaddons-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "kwidgetsaddons-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "cups-2.4.16-lib" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "cups-2.4.16-lib";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "ki18n-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "ki18n-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "util-linux-2.41.3-lib" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "util-linux-2.41.3-lib";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "gettext-0.25.1" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "gettext-0.25.1";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "kconfig-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "kconfig-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "kguiaddons-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "kguiaddons-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "fontconfig-2.17.1-lib" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "fontconfig-2.17.1-lib";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "qtsvg-6.10.1" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "qtsvg-6.10.1";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "glibc-2.40-218";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "kio-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "kio-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "kcoreaddons-6.20.0" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "kcoreaddons-6.20.0";
+  "akonadi-calendar-25.08.3" [fillcolor="#2c3e50"];
+  "glib-2.86.3" [fillcolor="#2c3e50"];
+  "akonadi-calendar-25.08.3" -> "glib-2.86.3";
+  "generic-lens-core-2.2.1.0-r2.c" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "generic-lens-core-2.2.1.0-r2.c" -> "bash-5.3p9.drv";
+  "generic-lens-core-2.2.1.0-r2.c" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "generic-lens-core-2.2.1.0-r2.c" -> "curl-8.17.0.drv";
+  "generic-lens-core-2.2.1.0-r2.c" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "generic-lens-core-2.2.1.0-r2.c" -> "stdenv-linux.drv";
+  "generic-lens-core-2.2.1.0-r2.c" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "generic-lens-core-2.2.1.0-r2.c" -> "source-stdenv.sh";
+  "generic-lens-core-2.2.1.0-r2.c" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "generic-lens-core-2.2.1.0-r2.c" -> "mirrors-list.drv";
+  "generic-lens-core-2.2.1.0-r2.c" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "generic-lens-core-2.2.1.0-r2.c" -> "builder.sh";
+  "yasm-1.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "yasm-1.3.0.tar.gz.drv" -> "bash-5.3p9.drv";
+  "yasm-1.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "yasm-1.3.0.tar.gz.drv" -> "curl-8.17.0.drv";
+  "yasm-1.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "yasm-1.3.0.tar.gz.drv" -> "stdenv-linux.drv";
+  "yasm-1.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "yasm-1.3.0.tar.gz.drv" -> "source-stdenv.sh";
+  "yasm-1.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "yasm-1.3.0.tar.gz.drv" -> "mirrors-list.drv";
+  "yasm-1.3.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "yasm-1.3.0.tar.gz.drv" -> "builder.sh";
+  "hexdump-util-linux-minimal-2.4" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "hexdump-util-linux-minimal-2.4" -> "stdenv-linux.drv";
+  "hexdump-util-linux-minimal-2.4" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "hexdump-util-linux-minimal-2.4" -> "bash-5.3p3.drv";
+  "hexdump-util-linux-minimal-2.4" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "hexdump-util-linux-minimal-2.4" -> "source-stdenv.sh";
+  "hexdump-util-linux-minimal-2.4" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "hexdump-util-linux-minimal-2.4" -> "default-builder.sh";
+  "time-manager-0.2.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "time-manager-0.2.4.tar.gz.drv" -> "bash-5.3p9.drv";
+  "time-manager-0.2.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "time-manager-0.2.4.tar.gz.drv" -> "curl-8.17.0.drv";
+  "time-manager-0.2.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "time-manager-0.2.4.tar.gz.drv" -> "stdenv-linux.drv";
+  "time-manager-0.2.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "time-manager-0.2.4.tar.gz.drv" -> "source-stdenv.sh";
+  "time-manager-0.2.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "time-manager-0.2.4.tar.gz.drv" -> "mirrors-list.drv";
+  "time-manager-0.2.4.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "time-manager-0.2.4.tar.gz.drv" -> "builder.sh";
+  "parser-combinators-1.3.0-doc" [fillcolor="#2c3e50"];
+  "ghc-9.10.3-doc" [fillcolor="#27ae60"];
+  "parser-combinators-1.3.0-doc" -> "ghc-9.10.3-doc";
+  "root.hints.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "root.hints.drv" -> "stdenv-linux.drv";
+  "root.hints.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "root.hints.drv" -> "curl-8.17.0.drv";
+  "root.hints.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "root.hints.drv" -> "bash-5.3p9.drv";
+  "root.hints.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "root.hints.drv" -> "source-stdenv.sh";
+  "root.hints.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "root.hints.drv" -> "mirrors-list.drv";
+  "root.hints.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "root.hints.drv" -> "builder.sh";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python-remove-bin-bytecode-hoo";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python-imports-check-hook.sh.d";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python-namespaces-hook.sh.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python-catch-conflicts-hook.dr" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python-catch-conflicts-hook.dr";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "pypa-build-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "pypa-build-hook.sh.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "wrap-python-hook.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "stdenv-linux.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "bash-5.3p3.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python-runtime-deps-check-hook" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python-runtime-deps-check-hook";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "pypa-install-hook.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python-remove-tests-dir-hook.d";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-gyp-unstable-2024-0" -> "source-stdenv.sh";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python3.13-setuptools-80.9.0.d";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python-output-dist-hook.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "python3-3.13.11.drv";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-gyp-unstable-2024-0" -> "default-builder.sh";
+  "python3.13-gyp-unstable-2024-0" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-gyp-unstable-2024-0" -> "ensure-newer-sources-hook.drv";
+  "kconfig-5.116.0" [fillcolor="#2c3e50"];
+  "gcc-14.3.0-lib" [fillcolor="#2c3e50"];
+  "kconfig-5.116.0" -> "gcc-14.3.0-lib";
+  "kconfig-5.116.0" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "kconfig-5.116.0" -> "glibc-2.40-218";
+  "source.drv" [fillcolor="#3498db"];
+  "glibc-locales-2.40-218.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "glibc-locales-2.40-218.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "unzip-6.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "unzip-6.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.18.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "mwc-random-0.15.2.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "mwc-random-0.15.2.0.tar.gz.drv" -> "bash-5.3p9.drv";
+  "mwc-random-0.15.2.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "mwc-random-0.15.2.0.tar.gz.drv" -> "curl-8.17.0.drv";
+  "mwc-random-0.15.2.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "mwc-random-0.15.2.0.tar.gz.drv" -> "stdenv-linux.drv";
+  "mwc-random-0.15.2.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "mwc-random-0.15.2.0.tar.gz.drv" -> "source-stdenv.sh";
+  "mwc-random-0.15.2.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "mwc-random-0.15.2.0.tar.gz.drv" -> "mirrors-list.drv";
+  "mwc-random-0.15.2.0.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "mwc-random-0.15.2.0.tar.gz.drv" -> "builder.sh";
+  "krb5-1.22.1.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "krb5-1.22.1.drv" -> "stdenv-linux.drv";
+  "krb5-1.22.1.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "krb5-1.22.1.drv" -> "source-stdenv.sh";
+  "krb5-1.22.1.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "krb5-1.22.1.drv" -> "default-builder.sh";
+  "krb5-1.22.1.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "krb5-1.22.1.drv" -> "bash-5.3p3.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "cmake-4.1.2.drv" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "cmake-4.1.2.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "meson-1.9.1.drv" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "meson-1.9.1.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "stdenv-linux.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "bash-5.3p3.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "nixd-2.7.0.drv" -> "source-stdenv.sh";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "pkg-config-wrapper-0.29.2.drv" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "pkg-config-wrapper-0.29.2.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "python3-3.13.11.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "ninja-1.13.1.drv" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "ninja-1.13.1.drv";
+  "nixd-2.7.0.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "nixd-2.7.0.drv" -> "default-builder.sh";
+  "dependent-sum-0.7.2.0.tar.gz.d" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "dependent-sum-0.7.2.0.tar.gz.d" -> "mirrors-list.drv";
+  "dependent-sum-0.7.2.0.tar.gz.d" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "dependent-sum-0.7.2.0.tar.gz.d" -> "stdenv-linux.drv";
+  "dependent-sum-0.7.2.0.tar.gz.d" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "dependent-sum-0.7.2.0.tar.gz.d" -> "bash-5.3p3.drv";
+  "dependent-sum-0.7.2.0.tar.gz.d" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "dependent-sum-0.7.2.0.tar.gz.d" -> "source-stdenv.sh";
+  "dependent-sum-0.7.2.0.tar.gz.d" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "dependent-sum-0.7.2.0.tar.gz.d" -> "curl-8.18.0.drv";
+  "dependent-sum-0.7.2.0.tar.gz.d" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "dependent-sum-0.7.2.0.tar.gz.d" -> "builder.sh";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "ensure-newer-sources-hook.drv" [fillcolor="#3498db"];
+  "python3.13-appdirs-1.4.4.drv" -> "ensure-newer-sources-hook.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python-remove-bin-bytecode-hoo" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python-remove-bin-bytecode-hoo";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python3-3.13.11.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python3-3.13.11.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "stdenv-linux.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "wrap-python-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "wrap-python-hook.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python-namespaces-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python-namespaces-hook.sh.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python-remove-tests-dir-hook.d" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python-remove-tests-dir-hook.d";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python3.13-setuptools-80.9.0.d" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python3.13-setuptools-80.9.0.d";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python-output-dist-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python-output-dist-hook.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "pypa-build-hook.sh.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "pypa-build-hook.sh.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "python3.13-appdirs-1.4.4.drv" -> "source-stdenv.sh";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python-catch-conflicts-hook.dr" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python-catch-conflicts-hook.dr";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "pypa-install-hook.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "pypa-install-hook.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "default-builder.sh";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "bash-5.3p3.drv";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python-runtime-deps-check-hook" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python-runtime-deps-check-hook";
+  "python3.13-appdirs-1.4.4.drv" [fillcolor="#2c3e50"];
+  "python-imports-check-hook.sh.d" [fillcolor="#2c3e50"];
+  "python3.13-appdirs-1.4.4.drv" -> "python-imports-check-hook.sh.d";
+  "aws-c-common-0.12.4" [fillcolor="#2c3e50"];
+  "glibc-2.40-218" [fillcolor="#2c3e50"];
+  "aws-c-common-0.12.4" -> "glibc-2.40-218";
+  "winapi-util-0.1.9.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "winapi-util-0.1.9.drv" -> "stdenv-linux.drv";
+  "winapi-util-0.1.9.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "winapi-util-0.1.9.drv" -> "bash-5.3p3.drv";
+  "winapi-util-0.1.9.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "winapi-util-0.1.9.drv" -> "source-stdenv.sh";
+  "winapi-util-0.1.9.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "winapi-util-0.1.9.drv" -> "default-builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.18.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "nss-cacert-3.117.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "nss-cacert-3.117.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "hackage-security-0.6.3.2-r1.ca" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "hackage-security-0.6.3.2-r1.ca" -> "bash-5.3p9.drv";
+  "hackage-security-0.6.3.2-r1.ca" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "hackage-security-0.6.3.2-r1.ca" -> "curl-8.17.0.drv";
+  "hackage-security-0.6.3.2-r1.ca" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "hackage-security-0.6.3.2-r1.ca" -> "stdenv-linux.drv";
+  "hackage-security-0.6.3.2-r1.ca" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "hackage-security-0.6.3.2-r1.ca" -> "source-stdenv.sh";
+  "hackage-security-0.6.3.2-r1.ca" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "hackage-security-0.6.3.2-r1.ca" -> "mirrors-list.drv";
+  "hackage-security-0.6.3.2-r1.ca" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "hackage-security-0.6.3.2-r1.ca" -> "builder.sh";
+  "mailcap-1.17.patch.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "mailcap-1.17.patch.drv" -> "bash-5.3p9.drv";
+  "mailcap-1.17.patch.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "mailcap-1.17.patch.drv" -> "stdenv-linux.drv";
+  "mailcap-1.17.patch.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "mailcap-1.17.patch.drv" -> "source-stdenv.sh";
+  "mailcap-1.17.patch.drv" [fillcolor="#2c3e50"];
+  "default-builder.sh" [fillcolor="#2c3e50"];
+  "mailcap-1.17.patch.drv" -> "default-builder.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "stdenv-linux.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "curl-8.18.0.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "mirrors-list.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "source.drv" -> "source-stdenv.sh";
+  "source.drv" [fillcolor="#3498db"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "source.drv" -> "bash-5.3p3.drv";
+  "source.drv" [fillcolor="#3498db"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "source.drv" -> "builder.sh";
+  "stm-containers-1.2.1.1.tar.gz." [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "stm-containers-1.2.1.1.tar.gz." -> "mirrors-list.drv";
+  "stm-containers-1.2.1.1.tar.gz." [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "stm-containers-1.2.1.1.tar.gz." -> "stdenv-linux.drv";
+  "stm-containers-1.2.1.1.tar.gz." [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "stm-containers-1.2.1.1.tar.gz." -> "bash-5.3p3.drv";
+  "stm-containers-1.2.1.1.tar.gz." [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "stm-containers-1.2.1.1.tar.gz." -> "source-stdenv.sh";
+  "stm-containers-1.2.1.1.tar.gz." [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "stm-containers-1.2.1.1.tar.gz." -> "curl-8.18.0.drv";
+  "stm-containers-1.2.1.1.tar.gz." [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "stm-containers-1.2.1.1.tar.gz." -> "builder.sh";
+  "foldl-1.4.18.tar.gz.drv" [fillcolor="#2c3e50"];
+  "mirrors-list.drv" [fillcolor="#2c3e50"];
+  "foldl-1.4.18.tar.gz.drv" -> "mirrors-list.drv";
+  "foldl-1.4.18.tar.gz.drv" [fillcolor="#2c3e50"];
+  "stdenv-linux.drv" [fillcolor="#2c3e50"];
+  "foldl-1.4.18.tar.gz.drv" -> "stdenv-linux.drv";
+  "foldl-1.4.18.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p3.drv" [fillcolor="#2c3e50"];
+  "foldl-1.4.18.tar.gz.drv" -> "bash-5.3p3.drv";
+  "foldl-1.4.18.tar.gz.drv" [fillcolor="#2c3e50"];
+  "source-stdenv.sh" [fillcolor="#3498db"];
+  "foldl-1.4.18.tar.gz.drv" -> "source-stdenv.sh";
+  "foldl-1.4.18.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.18.0.drv" [fillcolor="#2c3e50"];
+  "foldl-1.4.18.tar.gz.drv" -> "curl-8.18.0.drv";
+  "foldl-1.4.18.tar.gz.drv" [fillcolor="#2c3e50"];
+  "builder.sh" [fillcolor="#2c3e50"];
+  "foldl-1.4.18.tar.gz.drv" -> "builder.sh";
+  "HTTP-Cookies-6.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "bash-5.3p9.drv" [fillcolor="#2c3e50"];
+  "HTTP-Cookies-6.10.tar.gz.drv" -> "bash-5.3p9.drv";
+  "HTTP-Cookies-6.10.tar.gz.drv" [fillcolor="#2c3e50"];
+  "curl-8.17.0.drv" [fillcolor="#2c3e50"];
+  "HTTP-Cookies-6.10.tar.gz.drv" -> "curl-8.17.0.drv";
 
 }

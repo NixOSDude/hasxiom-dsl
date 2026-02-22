@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict N9g2WgXcNq6pcV585RDbn0uvdfkqZHjWU2xVb6eT0bZjFni8aZ8iZzorITZgtwz
+\restrict lteXs3ZWOyfhGOSN3nXOv56akf76gBipQzL0vsdoJsdN2IjetlU898JxEJcQbzk
 
 -- Dumped from database version 16.12
 -- Dumped by pg_dump version 16.12
@@ -29,11 +29,12 @@ SET default_table_access_method = heap;
 CREATE TABLE public.nix_packages (
     id integer NOT NULL,
     attribute_name text,
-    package_name text NOT NULL,
+    package_name text,
     version text,
     description text,
     ingestion_date timestamp without time zone DEFAULT CURRENT_TIMESTAMP,
-    depth integer
+    depth integer,
+    dependencies text[] DEFAULT '{}'::text[]
 );
 
 
@@ -105,6 +106,14 @@ ALTER TABLE ONLY public.package_dependencies
 
 
 --
+-- Name: nix_packages unique_attr; Type: CONSTRAINT; Schema: public; Owner: nixdude
+--
+
+ALTER TABLE ONLY public.nix_packages
+    ADD CONSTRAINT unique_attr UNIQUE (attribute_name);
+
+
+--
 -- Name: idx_package_name; Type: INDEX; Schema: public; Owner: nixdude
 --
 
@@ -131,5 +140,5 @@ ALTER TABLE ONLY public.package_dependencies
 -- PostgreSQL database dump complete
 --
 
-\unrestrict N9g2WgXcNq6pcV585RDbn0uvdfkqZHjWU2xVb6eT0bZjFni8aZ8iZzorITZgtwz
+\unrestrict lteXs3ZWOyfhGOSN3nXOv56akf76gBipQzL0vsdoJsdN2IjetlU898JxEJcQbzk
 

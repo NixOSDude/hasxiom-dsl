@@ -1,0 +1,10 @@
+packages: .
+
+source-repository-package
+    type: git
+    location: https://github.com/hasktorch/hasktorch
+    tag: master
+    subdir:
+        hasktorch
+        libtorch-ffi
+        libtorch-ffi-helper

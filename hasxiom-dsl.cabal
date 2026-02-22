@@ -1,36 +1,67 @@
-cabal-version: 3.0
-name:          hasxiom-dsl
-version:       0.1.0.0
-license:       MIT
-build-type:    Simple
+cabal-version:      3.0
+name:               hasxiom-dsl
+version:            0.1.0.0
+license:            MIT
+author:             NixDude
+maintainer:         nixdude@gmail.com
+build-type:         Simple
 
 common shared-properties
-    ghc-options: -Wall -O2
+    ghc-options:      -Wall -O2 -threaded
     build-depends:
         base >= 4.14 && < 5,
         aeson,
         bytestring,
         containers,
         text,
-        postgresql-simple
+        postgresql-simple,
+        vector,
+        haskeline,
+        directory,
+        filepath,
+        process,
+        hasktorch,
+        libtorch-ffi,
+        hashable
     default-language: Haskell2010
 
-executable update-attributes
-    import: shared-properties
-    main-is: UpdateAttributes.hs
-    hs-source-dirs: src
-
-executable compute-depth
-    import: shared-properties
-    main-is: ComputeDepth.hs
-    hs-source-dirs: src
+library
+    import:           shared-properties
+    exposed-modules:  Hasxiom.Core, Hasxiom.Database.Loader
+    hs-source-dirs:   src
 
 executable identify-pillars
-    import: shared-properties
-    main-is: IdentifyPillars.hs
-    hs-source-dirs: src
+    import:           shared-properties
+    main-is:          IdentifyPillars.hs
+    other-modules:    Hasxiom.Core, Hasxiom.Database.Loader
+    hs-source-dirs:   src
+
+executable hasxiom
+    import:           shared-properties
+    main-is:          Main.hs
+    other-modules:    Hasxiom.Core, Hasxiom.Database.Loader
+    hs-source-dirs:   src
+
+executable ingest-metadata
+    import:           shared-properties
+    main-is:          IngestMetadata.hs
+    other-modules:    Hasxiom.Core, Hasxiom.Database.Loader
+    hs-source-dirs:   src
+
+executable update-attributes
+    import:           shared-properties
+    main-is:          UpdateAttributes.hs
+    other-modules:    Hasxiom.Core, Hasxiom.Database.Loader
+    hs-source-dirs:   src
+
+executable compute-depth
+    import:           shared-properties
+    main-is:          ComputeDepth.hs
+    other-modules:    Hasxiom.Core, Hasxiom.Database.Loader
+    hs-source-dirs:   src
 
 executable generate-pin
-    import: shared-properties
-    main-is: GeneratePin.hs
-    hs-source-dirs: src
+    import:           shared-properties
+    main-is:          GeneratePin.hs
+    other-modules:    Hasxiom.Core, Hasxiom.Database.Loader
+    hs-source-dirs:   src
