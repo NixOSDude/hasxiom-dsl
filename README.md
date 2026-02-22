@@ -10,7 +10,7 @@ Inspired by **Malte Ott’s** technical breakdown of Nixpkgs and the axiomatic p
 
 ### Core Strategic Pillars:
 1. **Hasxiom DSL:** A custom language utilizing recursive combinators to define high-assurance logic for dependency resolution and "Blast Radius" calculation.
-2. **Sovereign ML Stack:** Utilizing **Ollama (CUDA-accelerated)** and **Hasktorch** to perform local LLM analysis on dependency graphs, ensuring all data and logic remain on-premises.
+2. **Proprietary Tensor Logic:** Utilizing **Hasktorch** and **Libtorch** to perform local tensor analysis on dependency graphs, ensuring all data and logic remain on-premises and strictly typed.
 3. **The RTX Galaxy:** Leveraging the **NVIDIA RTX 3060** for real-time visualization of complex 119-layer dependency clusters and tensor-based similarity mapping.
 4. **Mercury Financial Standard:** Strict adherence to the Four Tenets of pure Functional Programming (FP), meeting the rigorous engineering requirements of top-tier Haskell firms.
 
@@ -20,13 +20,14 @@ Inspired by **Malte Ott’s** technical breakdown of Nixpkgs and the axiomatic p
 Our environment is a distributed NixOS cluster, utilizing specialized roles for data persistence and high-performance compute.
 
 ### Node A: The Brain (Ultra 7 / Phoenix)
-* **Role:** GHC Compilation, Local AI Orchestration (Ollama/CUDA), and Tensor-based Analysis.
+* **Role:** GHC Compilation, Tensor-based Analysis (Hasktorch), and Sovereign Reasoning.
 * **IP:** `192.168.68.53`
 * **Hardware:**
-    * **CPU:** Intel Ultra 7 (16-core architecture)
+    * **CPU:** Intel Core Ultra 7 265KF (**20 Cores / 20 Threads**)
     * **RAM:** 64GB DDR5
     * **GPU:** NVIDIA RTX 3060 (12GB VRAM) - **Active CUDA 12.x Stack**
-* **Local AI:** Running **Ollama-CUDA** for sovereign reasoning and code synthesis.
+    * **OS:** NixOS 25.11 (Wayland / Plasma 6.5.5)
+* **Local AI:** Purely local tensor operations via Libtorch; no external model dependencies.
 
 ### Node B: The Vault (nixlakehouse)
 * **Role:** PostgreSQL Storage, Massive Store Crawling, Persistent Lakehouse.
@@ -36,7 +37,7 @@ Our environment is a distributed NixOS cluster, utilizing specialized roles for 
 1. **Total Functions Only:** No `null` values; `COALESCE` shields and `postgresql-simple` ensure type-safe interactions.
 2. **Immutability:** States are evolved through tail-recursion; data is never mutated.
 3. **Pure Logic:** Side effects are strictly isolated; infrastructure is declared via **Nix Flakes**.
-4. **Sovereignty:** All data, models (Ollama), and pins are local. No cloud telemetry or dependencies.
+4. **Sovereignty:** All data, models (Hasktorch), and pins are local. No cloud telemetry or dependencies.
 
 
 
