@@ -14,7 +14,7 @@ import System.Environment (getEnv)
 
 -- Tenet: Constants are immutable and pinned
 versionTag :: String
-versionTag = "v0.1.4-SOVEREIGN-TRACE"
+versionTag = "v0.1.5-20CORE-TENSOR-ALPHA"
 
 -- | Audit view for high-centrality pillars
 displayPillars :: [Package] -> IO ()
@@ -42,8 +42,8 @@ main = do
      
     displayPillars allPkgs
      
-    putStrLn "\n--- Hasxiom Sovereign REPL ---"
-    putStrLn "Commands: 'search <term>', 'trace <pkg>', 'status', 'exit'"
+    putStrLn "\n--- Hasxiom Sovereign REPL (20-Core Optimized) ---"
+    putStrLn "Commands: 'search <term>', 'trace <pkg>', 'vector <pkg>', 'status', 'exit'"
      
     runInputT defaultSettings (replLoop allPkgs)
 
@@ -64,7 +64,9 @@ replLoop pkgs = do
                 then handleSearch (T.drop 7 tInput) pkgs
                 else if "trace " `T.isPrefixOf` tInput
                     then handleTrace (T.drop 6 tInput) pkgs
-                    else handleBlastRadius tInput pkgs
+                    else if "vector " `T.isPrefixOf` tInput
+                        then handleVector (T.drop 7 tInput)
+                        else handleBlastRadius tInput pkgs
             replLoop pkgs
 
 handleSearch :: T.Text -> [Package] -> InputT IO ()
@@ -84,6 +86,17 @@ handleTrace target pkgs = do
     if null lineage
         then outputStrLn "  [Leaf Node or No Downstream Consumers]"
         else mapM_ (outputStrLn . ("  -> " ++) . T.unpack) (take 15 lineage)
+
+-- | 4D Tensor Fingerprinting Command
+handleVector :: T.Text -> InputT IO ()
+handleVector target = do
+    let coords = vectorize target
+    outputStrLn $ ">> Fingerprinting: " ++ T.unpack target
+    outputStrLn $ ">> 4D Tensor Coordinates: " ++ show coords
+    outputStrLn $ "   [ CUDA: " ++ show (head coords) ++ 
+                  " | GHC: " ++ show (coords !! 1) ++ 
+                  " | LIB: " ++ show (coords !! 2) ++ 
+                  " | HASH: " ++ show (coords !! 3) ++ " ]"
 
 handleBlastRadius :: T.Text -> [Package] -> InputT IO ()
 handleBlastRadius target pkgs = do
